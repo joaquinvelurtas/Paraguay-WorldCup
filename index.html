@@ -362,22 +362,23 @@ const PILLARS           = ["Equipo", "Humor", "Controversia", "Color en la tribu
 const SLIDE_INTERVAL_MS = 45000;
 const DATA_REFRESH_INTERVAL_MS = 60000;
 
-const LOGOS          = { "La Nación": BASE+"lanacion.png", "Infobae": BASE+"infobae.png", "Página/12": BASE+"pagina12.png", "TN": BASE+"tn.png", "Reddit": BASE+"reddit.png", "Ole": BASE+"ole.png", "Olé": BASE+"ole.png", "TyC": BASE+"tyc.png", "TyC Sports": BASE+"tyc.png", "TyCSports": BASE+"tyc.png" };
-const MEDIO_COLORS   = { "La Nación": "#1a3a6e", "Infobae": "#ff6a00", "Página/12": "#111", "TN": "#e8002d", "Reddit": "#ff4500", "Ole": "#009b3a", "Olé": "#009b3a", "TyC": "#003087", "TyC Sports": "#003087", "TyCSports": "#003087" };
-const MEDIO_INITIALS = { "La Nación": "LN", "Infobae": "IB", "Página/12": "P12", "TN": "TN", "Reddit": "r/", "Ole": "OLÉ", "Olé": "OLÉ", "TyC": "TyC", "TyC Sports": "TyC", "TyCSports": "TyC" };
+const AVAILABLE_MEDIA = ["abc", "cronica", "extra", "hoy", "5dias", "infonegocios", "vssports", "d10", "snt", "npy", "elnacional", "independiente", "monumental", "megacadena", "adndigital", "rockandpop", "latribuna", "delparaguay", "ole"];
+const LOGOS          = { "abc": BASE+"abc.png", "cronica": BASE+"cronica.png", "extra": BASE+"extra.png", "hoy": BASE+"hoy.png", "5dias": BASE+"5dias.png", "infonegocios": BASE+"infonegocios.png", "vssports": BASE+"vssports.png", "d10": BASE+"d10.png", "snt": BASE+"snt.png", "npy": BASE+"npy.png", "elnacional": BASE+"elnacional.png", "independiente": BASE+"independiente.png", "monumental": BASE+"monumental.png", "megacadena": BASE+"megacadena.png", "adndigital": BASE+"adndigital.png", "rockandpop": BASE+"rockandpop.png", "latribuna": BASE+"latribuna.png", "delparaguay": BASE+"delparaguay.png", "ole": BASE+"ole.png" };
+const MEDIO_COLORS   = { "abc": "#1a3a6e", "cronica": "#b51f2d", "extra": "#245f9e", "hoy": "#c0392b", "5dias": "#2f6f73", "infonegocios": "#0f4c81", "vssports": "#1f7a5c", "d10": "#009b3a", "snt": "#673ab7", "npy": "#00838f", "elnacional": "#2c3e50", "independiente": "#9b1c31", "monumental": "#d35400", "megacadena": "#3949ab", "adndigital": "#00695c", "rockandpop": "#8e244d", "latribuna": "#6d4c41", "delparaguay": "#455a64", "ole": "#009b3a" };
+const MEDIO_INITIALS = { "abc": "ABC", "cronica": "CRO", "extra": "EXT", "hoy": "HOY", "5dias": "5D", "infonegocios": "IN", "vssports": "VS", "d10": "D10", "snt": "SNT", "npy": "NPY", "elnacional": "EN", "independiente": "IND", "monumental": "MON", "megacadena": "MEG", "adndigital": "ADN", "rockandpop": "R&P", "latribuna": "LT", "delparaguay": "DP", "ole": "OLÉ" };
 
 // ── Fallback: portales ────────────────────────────────────────
 const DUMMY_NEWS = [
-  { titulo_corto: "Mini Dibu furor en redes",        resumen: "Un nene de 3 años se volvió viral por imitar al Dibu Martínez y analizar fútbol con naturalidad.", medio: "TN",       pilar: "Humor" },
-  { titulo_corto: "Vidente pronostica el Mundial",   resumen: "Un supuesto vidente de las copas lanzó su pronóstico para el Mundial 2026, instalando expectativa y conversación lúdica.", medio: "Infobae", pilar: "Humor" },
-  { titulo_corto: "Messi preocupa a la Selección",   resumen: "La recuperación de Messi aparece como tema central para Scaloni y condiciona la planificación previa al Mundial.", medio: "TN",       pilar: "Equipo" },
-  { titulo_corto: "Primer rival con lesiones",       resumen: "El primer rival de Argentina llega con un panorama complejo de lesiones antes de definir su lista.", medio: "TN",       pilar: "Equipo" },
-  { titulo_corto: "Entradas FIFA bajo sospecha",     resumen: "La FIFA asegura entradas agotadas, pero todavía aparecen boletos disponibles en distintas sedes.", medio: "Infobae", pilar: "Controversia" },
-  { titulo_corto: "Investigan venta de entradas",    resumen: "Una investigación apunta a la venta de entradas para el Mundial 2026, sumando tensión sobre la transparencia del sistema.", medio: "Infobae", pilar: "Controversia" },
-  { titulo_corto: "Gesto viral de Messi",            resumen: "Messi protagonizó un momento inesperado con un fanático y el video se volvió viral, reforzando el vínculo con la hinchada.", medio: "TN",       pilar: "Color en la tribuna" },
-  { titulo_corto: "Camisetas argentinas en pareja",  resumen: "La novia de Senesi se probó camisetas de Argentina y eligieron juntos la más linda, activando conversación de hinchada.", medio: "Infobae", pilar: "Color en la tribuna" },
-  { titulo_corto: "Retiran estatua de Messi",        resumen: "Una estatua gigante de Messi en India será retirada, mostrando el alcance global del capitán argentino.", medio: "TN",       pilar: "Argentina por el mundo" },
-  { titulo_corto: "Canción del Mundial con Messi",   resumen: "Se lanzó el video oficial de la canción del Mundial 2026 con participación de Messi, posicionándolo como figura global.", medio: "TN",       pilar: "Argentina por el mundo" }
+  { titulo_corto: "Mini Dibu furor en redes",        resumen: "Un nene de 3 años se volvió viral por imitar al Dibu Martínez y analizar fútbol con naturalidad.", medio: "abc",       pilar: "Humor" },
+  { titulo_corto: "Vidente pronostica el Mundial",   resumen: "Un supuesto vidente de las copas lanzó su pronóstico para el Mundial 2026, instalando expectativa y conversación lúdica.", medio: "infonegocios", pilar: "Humor" },
+  { titulo_corto: "Messi preocupa a la Selección",   resumen: "La recuperación de Messi aparece como tema central para Scaloni y condiciona la planificación previa al Mundial.", medio: "abc",       pilar: "Equipo" },
+  { titulo_corto: "Primer rival con lesiones",       resumen: "El primer rival de Argentina llega con un panorama complejo de lesiones antes de definir su lista.", medio: "abc",       pilar: "Equipo" },
+  { titulo_corto: "Entradas FIFA bajo sospecha",     resumen: "La FIFA asegura entradas agotadas, pero todavía aparecen boletos disponibles en distintas sedes.", medio: "infonegocios", pilar: "Controversia" },
+  { titulo_corto: "Investigan venta de entradas",    resumen: "Una investigación apunta a la venta de entradas para el Mundial 2026, sumando tensión sobre la transparencia del sistema.", medio: "infonegocios", pilar: "Controversia" },
+  { titulo_corto: "Gesto viral de Messi",            resumen: "Messi protagonizó un momento inesperado con un fanático y el video se volvió viral, reforzando el vínculo con la hinchada.", medio: "abc",       pilar: "Color en la tribuna" },
+  { titulo_corto: "Camisetas argentinas en pareja",  resumen: "La novia de Senesi se probó camisetas de Argentina y eligieron juntos la más linda, activando conversación de hinchada.", medio: "infonegocios", pilar: "Color en la tribuna" },
+  { titulo_corto: "Retiran estatua de Messi",        resumen: "Una estatua gigante de Messi en India será retirada, mostrando el alcance global del capitán argentino.", medio: "abc",       pilar: "Argentina por el mundo" },
+  { titulo_corto: "Canción del Mundial con Messi",   resumen: "Se lanzó el video oficial de la canción del Mundial 2026 con participación de Messi, posicionándolo como figura global.", medio: "abc",       pilar: "Argentina por el mundo" }
 ];
 
 // ── Fallback: twitter posts ───────────────────────────────────
@@ -573,7 +574,6 @@ async function initPortales() {
     if (!res.ok) throw new Error("HTTP " + res.status);
     const json = await res.json();
     renderDashboard(prepPortales(parsePortalesJSON(json)), "dashboard", buildCard);
-    window._overviewCache = json.overview || null;
   } catch(e) {
     console.warn("Portales JSON failed:", e.message);
     renderDashboard(prepPortales(DUMMY_NEWS), "dashboard", buildCard);
