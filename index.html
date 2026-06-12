@@ -363,10 +363,72 @@ const SLIDE_INTERVAL_MS = 45000;
 const DATA_REFRESH_INTERVAL_MS = 60000;
 
 const AVAILABLE_MEDIA = ["abc", "cronica", "extra", "hoy", "5dias", "infonegocios", "vssports", "d10", "snt", "npy", "elnacional", "independiente", "monumental", "megacadena", "adndigital", "rockandpop", "latribuna", "delparaguay", "ole"];
-const LOGOS          = { "abc": BASE+"abc.png", "cronica": BASE+"cronica.png", "extra": BASE+"extra.png", "hoy": BASE+"hoy.png", "5dias": BASE+"5dias.png", "infonegocios": BASE+"infonegocios.png", "vssports": BASE+"vssports.png", "d10": BASE+"d10.png", "snt": BASE+"snt.png", "npy": BASE+"npy.png", "elnacional": BASE+"elnacional.png", "independiente": BASE+"independiente.png", "monumental": BASE+"monumental.png", "megacadena": BASE+"megacadena.png", "adndigital": BASE+"adndigital.png", "rockandpop": BASE+"rockandpop.png", "latribuna": BASE+"latribuna.png", "delparaguay": BASE+"delparaguay.png", "ole": BASE+"ole.png" };
-const MEDIO_COLORS   = { "abc": "#1a3a6e", "cronica": "#b51f2d", "extra": "#245f9e", "hoy": "#c0392b", "5dias": "#2f6f73", "infonegocios": "#0f4c81", "vssports": "#1f7a5c", "d10": "#009b3a", "snt": "#673ab7", "npy": "#00838f", "elnacional": "#2c3e50", "independiente": "#9b1c31", "monumental": "#d35400", "megacadena": "#3949ab", "adndigital": "#00695c", "rockandpop": "#8e244d", "latribuna": "#6d4c41", "delparaguay": "#455a64", "ole": "#009b3a" };
-const MEDIO_INITIALS = { "abc": "ABC", "cronica": "CRO", "extra": "EXT", "hoy": "HOY", "5dias": "5D", "infonegocios": "IN", "vssports": "VS", "d10": "D10", "snt": "SNT", "npy": "NPY", "elnacional": "EN", "independiente": "IND", "monumental": "MON", "megacadena": "MEG", "adndigital": "ADN", "rockandpop": "R&P", "latribuna": "LT", "delparaguay": "DP", "ole": "OLÉ" };
+const LOGOS = {
+  "abc": "https://www.google.com/s2/favicons?domain=abc.com.py&sz=128",
+  "cronica": "https://www.google.com/s2/favicons?domain=cronica.com.py&sz=128",
+  "extra": "https://www.google.com/s2/favicons?domain=extra.com.py&sz=128",
+  "hoy": "https://www.google.com/s2/favicons?domain=hoy.com.py&sz=128",
+  "5dias": "https://www.google.com/s2/favicons?domain=5dias.com.py&sz=128",
+  "infonegocios": "https://www.google.com/s2/favicons?domain=infonegocios.com.py&sz=128",
+  "vssports": "https://www.google.com/s2/favicons?domain=vssports.com.py&sz=128",
+  "d10": "https://www.google.com/s2/favicons?domain=d10.ultimahora.com&sz=128",
+  "snt": "https://www.google.com/s2/favicons?domain=snt.com.py&sz=128",
+  "npy": "https://www.google.com/s2/favicons?domain=npy.com.py&sz=128",
+  "elnacional": "https://www.google.com/s2/favicons?domain=elnacional.com.py&sz=128",
+  "independiente": "https://www.google.com/s2/favicons?domain=independiente.com.py&sz=128",
+  "monumental": "https://www.google.com/s2/favicons?domain=monumental.com.py&sz=128",
+  "megacadena": "https://www.google.com/s2/favicons?domain=megacadena.com.py&sz=128",
+  "adndigital": "https://www.google.com/s2/favicons?domain=adndigital.com.py&sz=128",
+  "rockandpop": "https://www.google.com/s2/favicons?domain=rockandpop.com.py&sz=128",
+  "latribuna": "https://www.google.com/s2/favicons?domain=latribuna.com.py&sz=128",
+  "delparaguay": "https://www.google.com/s2/favicons?domain=delparaguay.com.py&sz=128",
+  "ole": "https://www.google.com/s2/favicons?domain=ole.com.ar&sz=128"
+};
 
+const MEDIO_COLORS = {
+  "abc": "#1b4f9c",
+  "cronica": "#e51b23",
+  "extra": "#ec1c24",
+  "hoy": "#1f7acb",
+  "5dias": "#1d3557",
+  "infonegocios": "#e21b2d",
+  "vssports": "#112b5c",
+  "d10": "#f28c00",
+  "snt": "#f6c400",
+  "npy": "#005baa",
+  "elnacional": "#111111",
+  "independiente": "#222222",
+  "monumental": "#0057a8",
+  "megacadena": "#e30613",
+  "adndigital": "#d71920",
+  "rockandpop": "#111111",
+  "latribuna": "#0f2a44",
+  "delparaguay": "#d71920",
+  "ole": "#009b3a"
+};
+
+const MEDIO_INITIALS = {
+  "abc": "ABC",
+  "cronica": "CR",
+  "extra": "EX",
+  "hoy": "HOY",
+  "5dias": "5D",
+  "infonegocios": "IN",
+  "vssports": "VS",
+  "d10": "D10",
+  "snt": "SNT",
+  "npy": "NPY",
+  "elnacional": "EN",
+  "independiente": "EI",
+  "monumental": "M",
+  "megacadena": "MC",
+  "adndigital": "ADN",
+  "rockandpop": "R&P",
+  "latribuna": "LT",
+  "delparaguay": "DP",
+  "ole": "OLÉ"
+};
+  
 // ── Fallback: portales ────────────────────────────────────────
 const DUMMY_NEWS = [
   { titulo_corto: "Mini Dibu furor en redes",        resumen: "Un nene de 3 años se volvió viral por imitar al Dibu Martínez y analizar fútbol con naturalidad.", medio: "abc",       pilar: "Humor" },
