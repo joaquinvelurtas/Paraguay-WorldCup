@@ -358,7 +358,7 @@ const BEER_JSON         = BASE + "beer_conversation.json";
 const COMPETITION_JSON  = BASE + "competition_conversation.json";
 const TOPICS_JSON       = BASE + "topics_volume_evolution.json";
 const GOLD_KEYS         = ["neymar", "hoteles", "nueva jersey", "messi"];
-const PILLARS           = ["Equipo", "Humor", "Controversia", "Color en la tribuna", "Argentina por el mundo", "Alcohol", "Cerveza"];
+const PILLARS           = ["Equipo", "Humor", "Controversia", "Color en la tribuna", "Paraguay por el mundo", "Alcohol", "Cerveza"];
 const SLIDE_INTERVAL_MS = 45000;
 const DATA_REFRESH_INTERVAL_MS = 60000;
 
@@ -612,7 +612,7 @@ function prepPortales(data) {
   return data.map(item => ({ ...item, gold: GOLD_KEYS.some(k => item.titulo_corto.toLowerCase().includes(k)) }));
 }
 function prepTwitter(data) {
-  return data.map(item => ({ ...item, gold: (item.pilar || item.Pilar) === "Argentina por el mundo" || GOLD_KEYS.some(k => (item.posteo_destacado || '').toLowerCase().includes(k)) }));
+  return data.map(item => ({ ...item, gold: (item.pilar || item.Pilar) === "Paraguay por el mundo" || GOLD_KEYS.some(k => (item.posteo_destacado || '').toLowerCase().includes(k)) }));
 }
 
 // ── Fetch portales ────────────────────────────────────────────
