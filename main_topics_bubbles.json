@@ -1,0 +1,60 @@
+{
+  "topics": [
+    {
+      "tema": "Senesi convocado al Mundial",
+      "engagement": 12500,
+      "views": 850000,
+      "volumen": 4200,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Preparación debut vs Argelia",
+      "engagement": 7800,
+      "views": 520000,
+      "volumen": 3100,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Arranca el Mundial 2026",
+      "engagement": 28500,
+      "views": 2100000,
+      "volumen": 11500,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Julián Álvarez listo para debut",
+      "engagement": 5200,
+      "views": 380000,
+      "volumen": 1950,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Hype hinchas y expectativa WC",
+      "engagement": 9500,
+      "views": 720000,
+      "volumen": 4800,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Último Mundial de Messi",
+      "engagement": 4800,
+      "views": 390000,
+      "volumen": 2300,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Hinchas argentinos en Miami",
+      "engagement": 4100,
+      "views": 310000,
+      "volumen": 1700,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Dibu Martínez entrena normal",
+      "engagement": 3500,
+      "views": 260000,
+      "volumen": 1400,
+      "sentiment": "Positive"
+    }
+  ]
+}

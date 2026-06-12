@@ -1,0 +1,84 @@
+{
+  "overview": {
+    "portales": {
+      "summary": "La conversación en portales combina preparación deportiva, épica de hinchas, memes de Messi y controversias de organización, con Argentina como eje emocional."
+    },
+    "reddit": {
+      "summary": "En Reddit aparece una mirada cotidiana del Mundial: cerveza, asado y partido de Argentina como ritual social alrededor de la Selección."
+    }
+  },
+  "pilares": {
+    "Equipo": [
+      {
+        "titulo_corto": "Scaloni define el debut",
+        "resumen": "Scaloni empieza a definir el once para el debut ante Argelia mientras la Selección entrena en Kansas.",
+        "medio": "TN",
+        "url": "https://tn.com.ar/deportes/mundial/2026/2026/06/12/la-seleccion-entrenara-en-kansas-y-lionel-scaloni-empieza-a-definir-la-formacion-que-pondra-con-argelia"
+      },
+      {
+        "titulo_corto": "Senesi entra por Balerdi",
+        "resumen": "Senesi se suma a la lista argentina en reemplazo de Balerdi y entra al Mundial por una baja de último momento.",
+        "medio": "Página/12",
+        "url": "https://www.pagina12.com.ar/2026/06/11/senesi-se-suma-a-la-seleccion-en-lugar-de-balerdi"
+      }
+    ],
+    "Color en la tribuna": [
+      {
+        "titulo_corto": "De Gualeguaychú a Kansas",
+        "resumen": "Tres amigos pedalearon desde Gualeguaychú hasta Kansas para ver a la Selección y Scaloni les cumplió un sueño.",
+        "medio": "TN",
+        "url": "https://tn.com.ar/deportes/mundial/2026/2026/06/12/de-gualeguaychu-al-mundial-2026-pedalearon-17-mil-kilometros-hasta-kansas-y-scaloni-les-cumplio-un-sueno"
+      },
+      {
+        "titulo_corto": "La cábala de los 20 amigos",
+        "resumen": "Un grupo de 20 amigos repite la cábala de alquilar una casa para ver el Mundial, como en la consagración anterior.",
+        "medio": "La Nación",
+        "url": "https://www.lanacion.com.ar/deportes/alquilaron-una-casa-para-ver-el-mundial-pasado-y-ahora-vuelven-a-repetir-la-cabala-la-locura-de-20-nid11062026"
+      }
+    ],
+    "Humor": [
+      {
+        "titulo_corto": "Sampaio se volvió meme",
+        "resumen": "La pronunciación en inglés del árbitro Sampaio en México-Sudáfrica disparó memes y reacciones durante el arranque del Mundial.",
+        "medio": "Infobae",
+        "url": "https://www.infobae.com/deportes/2026/06/12/los-mejores-memes-y-reacciones-por-la-singular-pronunciacion-en-ingles-del-arbitro-sampaio-en-mexico-sudafrica"
+      },
+      {
+        "titulo_corto": "Nuevo meme de Messi",
+        "resumen": "Una escena confusa con Messi antes del Mundial activó un nuevo meme alrededor del capitán argentino.",
+        "medio": "Infobae",
+        "url": "https://www.infobae.com/deportes/2026/06/11/no-es-agua-la-confusa-escena-que-desbloqueo-un-nuevo-meme-de-messi-antes-del-mundial-2026"
+      }
+    ],
+    "Controversia": [
+      {
+        "titulo_corto": "Árbitro deportado vuelve a escena",
+        "resumen": "Un árbitro somalí deportado en un Mundial anterior vuelve a escena al ser designado para dirigir la Supercopa de Europa.",
+        "medio": "TyC Sports",
+        "url": "https://www.tycsports.com/futbol-internacional/arbitro-somali-deportado-mundial-dirigira-supercopa-europa-psg-aston-villa-id735578.html"
+      },
+      {
+        "titulo_corto": "Incidentes en el Azteca",
+        "resumen": "Hubo incidentes en inmediaciones del Estadio Azteca durante la inauguración del Mundial, con tensión y protestas.",
+        "medio": "TyC Sports",
+        "url": "https://www.tycsports.com/mundial/incidentes-en-las-inmediaciones-del-estadio-azteca-durante-la-inauguracion-del-mundial-2026-id735711.html"
+      }
+    ],
+    "Alcohol": [
+      {
+        "titulo_corto": "Cerveza y asado para Argentina",
+        "resumen": "Un usuario propone comprar packs de cerveza y hacer asado cuando juegue Argentina, conectando alcohol, ritual y Mundial.",
+        "medio": "Reddit",
+        "url": "https://www.reddit.com/r/ArgentinaBenderStyle/comments/1u3mc5b/que_te_frena_a_comprarte_unos_packs_de_cerveza_y/"
+      }
+    ],
+    "Argentina por el mundo": [
+      {
+        "titulo_corto": "Gudjohnsen y la foto con Messi",
+        "resumen": "El hijo de Gudjohnsen compartió una foto inédita con Messi tras Argentina-Islandia y lo presentó como un sueño de chico.",
+        "medio": "Infobae",
+        "url": "https://www.infobae.com/deportes/2026/06/12/la-foto-inedita-con-messi-que-publico-el-hijo-de-gudjohnsen-tras-cambiar-camisetas-en-argentina-islandia-el-sueno-de-todo-chico"
+      }
+    ]
+  }
+}

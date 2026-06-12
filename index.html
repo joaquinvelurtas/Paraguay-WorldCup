@@ -1,1 +1,924 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dashboard Mundial 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:             #080c18;
+    --col-bg:         #0e1220;
+    --card-bg:        #131829;
+    --card-hover:     #181e30;
+    --text-primary:   #eef0f8;
+    --text-secondary: #7a819e;
+    --text-muted:     #4a5170;
+    --border:         #1e2438;
+    --border-hover:   #2e3555;
+    --arrow-color:    #3fb87a;
+    --radius:         14px;
+    --radius-sm:      10px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    font-family: 'DM Sans', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    color: var(--text-primary);
+  }
 
+  /* ── Slide system ─────────────────────────────────────────── */
+  .slide {
+    position: fixed;
+    inset: 0;
+    bottom: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: var(--bg);
+  }
+  .slide.active { opacity: 1; pointer-events: all; }
+
+  /* ── Slide 2: Twitter dashboard ──────────────────────────── */
+  #slide-2 { padding: 24px; }
+
+  /* ── Slide 3: Bubble chart + right panel ─────────────────── */
+  #slide-3 {
+    padding: 20px 24px;
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  /* ── Dashboard grid (slides 1 & 2) ───────────────────────── */
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .column {
+    background: var(--col-bg);
+    border-radius: var(--radius);
+    padding: 18px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid var(--border);
+    height: 100%;
+    overflow: hidden;
+  }
+  .column-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--text-primary);
+    text-align: center;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    letter-spacing: -0.2px;
+    flex-shrink: 0;
+    height: 2.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.25;
+  }
+
+  /* ── News card ────────────────────────────────────────────── */
+  .card {
+    background: var(--card-bg);
+    border-radius: var(--radius-sm);
+    padding: 15px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    min-height: 0;
+    border: 1px solid var(--border);
+    transition: background 0.2s, border-color 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover { background: var(--card-hover); border-color: var(--border-hover); }
+  .card.gold {
+    background: linear-gradient(135deg, #1e1a0a 0%, #221e0d 40%, #1a1608 100%);
+    border-color: #3a3010;
+  }
+  .card.gold:hover {
+    background: linear-gradient(135deg, #252110 0%, #28230f 40%, #1e1a0a 100%);
+    border-color: #4a3e18;
+  }
+  .card.gold::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 80px; height: 80px;
+    background: radial-gradient(ellipse at top left, rgba(201,168,76,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .card-top { display: flex; flex-direction: column; gap: 8px; }
+  .card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .card-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--text-primary);
+    flex: 1;
+  }
+  .card.gold .card-title { color: #e8ca7a; }
+  .arrow-wrap { flex-shrink: 0; margin-top: 1px; color: var(--arrow-color); }
+  .card.gold .arrow-wrap { color: #c9a84c; }
+  .card-summary { font-size: 11.5px; line-height: 1.55; color: var(--text-secondary); flex: 1; overflow: hidden; }
+  .card-divider { height: 1px; background: var(--border); }
+  .card.gold .card-divider { background: #3a3010; }
+  .card-footer { display: flex; align-items: center; gap: 8px; min-height: 0; }
+  .medio-logo { width: 22px; height: 22px; border-radius: 4px; overflow: hidden; flex-shrink: 0; position: relative; }
+  .medio-logo img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+  .medio-logo .initials {
+    display: none; position: absolute; inset: 0;
+    align-items: center; justify-content: center;
+    font-size: 7px; font-weight: 800; color: #fff;
+    border-radius: 4px; letter-spacing: -0.3px;
+  }
+  .medio-name { font-size: 11px; font-weight: 600; color: var(--text-muted); letter-spacing: 0.2px; }
+
+  /* ── Twitter card ─────────────────────────────────────────── */
+  .x-logo-wrap {
+    width: 22px; height: 22px; border-radius: 4px;
+    background: #000; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center; color: #fff;
+  }
+  .tweet-text {
+    font-size: 11.5px; line-height: 1.5; color: var(--text-primary); font-weight: 500;
+    overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+  }
+  .card.gold .tweet-text { color: #f0dfa0; }
+  .tweet-desc { font-size: 11px; line-height: 1.5; color: var(--text-secondary); flex: 1; overflow: hidden; }
+  .tweet-metrics { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .metric { flex: 1; justify-content: center; display: flex; align-items: center; gap: 4px; font-size: 10.5px; font-weight: 600; color: var(--text-muted); }
+  .metric svg { flex-shrink: 0; }
+
+  /* ── Slide 3 left: Bubble chart ──────────────────────────── */
+  .chart-shell {
+    flex: 0 0 37.5%; max-width: 37.5%; overflow: hidden; min-width: 0; height: 100%;
+    display: flex; flex-direction: column;
+    background: var(--col-bg); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 14px 14px 12px;
+  }
+  .chart-body { flex: 1; min-height: 0; position: relative; }
+  #bubbleCanvas { position: absolute; inset: 0; display: block; }
+
+  /* ── Slide 3 right: Brand & Topics panel ─────────────────── */
+  .slide2-right {
+    flex: 1; min-width: 0; height: 100%;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+
+  /* top half: beer + competition */
+  .right-top {
+    flex: 3; min-height: 0;
+    display: flex; flex-direction: row; gap: 10px;
+  }
+  .news-col {
+    flex: 1; min-width: 0;
+    display: flex; flex-direction: column; gap: 7px;
+    background: var(--col-bg); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 14px 14px 12px;
+  }
+  .news-col-title {
+    font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 800;
+    color: var(--text-primary); flex-shrink: 0;
+    margin-bottom: 4px; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+  }
+  .brand-card {
+    flex: 1; min-height: 0;
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: var(--radius-sm); padding: 9px 11px;
+    display: flex; flex-direction: column; gap: 5px; overflow: hidden;
+  }
+  .brand-header {
+    display: flex; align-items: center; gap: 5px;
+    flex-shrink: 0; overflow: hidden; min-width: 0;
+  }
+  .brand-marca {
+    font-family: 'Outfit', sans-serif; font-size: 11px; font-weight: 800;
+    color: #c9a84c; white-space: nowrap; flex-shrink: 0;
+  }
+  .brand-sep { color: var(--text-muted); font-size: 11px; flex-shrink: 0; }
+  .brand-titulo {
+    font-size: 11.5px; font-weight: 600; color: var(--text-primary);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    flex: 1; min-width: 0;
+  }
+  .brand-resumen {
+    font-size: 10.5px; line-height: 1.5; color: var(--text-secondary);
+    flex: 1; overflow: hidden;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+  }
+
+  /* bottom half: topic evolution */
+  .right-bottom {
+    flex: 2; min-height: 0;
+    background: var(--col-bg); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 14px 14px 12px;
+    display: flex; flex-direction: column;
+  }
+  .right-bottom-title {
+    font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 800;
+    color: var(--text-primary); flex-shrink: 0; margin-bottom: 10px;
+  }
+  .topic-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 8px; flex: 1; min-height: 0;
+  }
+  .topic-card {
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: var(--radius-sm); padding: 9px 11px 8px;
+    display: flex; flex-direction: column; gap: 3px; overflow: hidden;
+  }
+  .topic-name {
+    font-size: 9.5px; font-weight: 600; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.3px;
+    overflow: hidden; display: -webkit-box;
+    -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    flex-shrink: 0; line-height: 1.3; margin-bottom: 2px;
+  }
+  .topic-vol {
+    font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 800;
+    color: var(--text-primary); line-height: 1;
+  }
+  .topic-delta { font-size: 10px; font-weight: 600; margin-bottom: 3px; }
+  .delta-up   { color: #3fb87a; }
+  .delta-down { color: #e04848; }
+  .delta-flat { color: var(--text-muted); }
+  .topic-canvas {
+    width: 100%; height: 32px;
+    display: block;
+    flex: 0 0 32px;
+    min-height: 32px; max-height: 32px;
+  }
+
+  /* ── Footer ───────────────────────────────────────────────── */
+  .bottom-bar {
+    position: fixed; bottom: 0; left: 0; right: 0; height: 50px;
+    background: var(--bg); border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 28px 0 12px; z-index: 100;
+  }
+  .footer-left-group {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    height: 100%;
+    flex-shrink: 0;
+  }
+  .footer-mascot {
+    height: 54px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+  }
+  .bottom-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
+    align-self: center;
+  }
+  #footer-left { transition: opacity 0.4s ease; }
+  .bottom-pill {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    background: var(--col-bg); border: 1px solid var(--border);
+    border-radius: 20px; padding: 6px 16px;
+    font-size: 12.5px; font-weight: 600; color: var(--text-secondary);
+    display: flex; align-items: center; gap: 7px; white-space: nowrap;
+  }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: #c9a84c; }
+
+</style>
+</head>
+<body>
+
+<div class="slide active" id="slide-1">
+  <div class="dashboard" id="dashboard"></div>
+</div>
+
+<div class="slide" id="slide-2">
+  <div class="dashboard" id="dashboard-twitter"></div>
+</div>
+
+<div class="slide" id="slide-3">
+  <div class="chart-shell">
+    <div class="chart-body">
+      <canvas id="bubbleCanvas"></canvas>
+    </div>
+  </div>
+  <div class="slide2-right" id="slide2-right"></div>
+</div>
+
+
+<div class="bottom-bar">
+  <div class="footer-left-group">
+    <img class="footer-mascot" src="barddur.png" alt="Barddur" onerror="this.style.display='none'"/>
+    <span class="bottom-label" id="footer-left">Portales de Noticias</span>
+  </div>
+  <div class="bottom-pill"><span class="dot"></span>Newsroom WC 2026</div>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <img src="https://raw.githubusercontent.com/joaquinvelurtas/Leila-WorldCup/main/wc_logo_png.png"
+         alt="WC 2026"
+         style="height:34px;width:auto;object-fit:contain;opacity:0.92;"
+         onerror="this.style.display='none'"/>
+    <img src="https://raw.githubusercontent.com/joaquinvelurtas/Leila-WorldCup/main/draftline_logo.png"
+         alt="draftLine"
+         style="height:100px;width:auto;object-fit:contain;opacity:0.92;"
+         onerror="this.style.display='none'"/>
+  </div>
+</div>
+
+<script>
+// ── Config ────────────────────────────────────────────────────
+const BASE              = "https://raw.githubusercontent.com/joaquinvelurtas/Leila-WorldCup/main/";
+const RAW_JSON          = BASE + "posteos_mundial_2026_pilares.json";
+const TWITTER_JSON      = BASE + "TWITTER_posteos_mundial_2026_pilares.json";
+const BUBBLE_JSON       = BASE + "main_topics_bubbles.json";
+const BEER_JSON         = BASE + "beer_conversation.json";
+const COMPETITION_JSON  = BASE + "competition_conversation.json";
+const TOPICS_JSON       = BASE + "topics_volume_evolution.json";
+const GOLD_KEYS         = ["neymar", "hoteles", "nueva jersey", "messi"];
+const PILLARS           = ["Equipo", "Humor", "Controversia", "Color en la tribuna", "Argentina por el mundo", "Alcohol", "Cerveza"];
+const SLIDE_INTERVAL_MS = 45000;
+const DATA_REFRESH_INTERVAL_MS = 60000;
+
+const LOGOS          = { "La Nación": BASE+"lanacion.png", "Infobae": BASE+"infobae.png", "Página/12": BASE+"pagina12.png", "TN": BASE+"tn.png", "Reddit": BASE+"reddit.png", "Ole": BASE+"ole.png", "Olé": BASE+"ole.png", "TyC": BASE+"tyc.png", "TyC Sports": BASE+"tyc.png", "TyCSports": BASE+"tyc.png" };
+const MEDIO_COLORS   = { "La Nación": "#1a3a6e", "Infobae": "#ff6a00", "Página/12": "#111", "TN": "#e8002d", "Reddit": "#ff4500", "Ole": "#009b3a", "Olé": "#009b3a", "TyC": "#003087", "TyC Sports": "#003087", "TyCSports": "#003087" };
+const MEDIO_INITIALS = { "La Nación": "LN", "Infobae": "IB", "Página/12": "P12", "TN": "TN", "Reddit": "r/", "Ole": "OLÉ", "Olé": "OLÉ", "TyC": "TyC", "TyC Sports": "TyC", "TyCSports": "TyC" };
+
+// ── Fallback: portales ────────────────────────────────────────
+const DUMMY_NEWS = [
+  { titulo_corto: "Mini Dibu furor en redes",        resumen: "Un nene de 3 años se volvió viral por imitar al Dibu Martínez y analizar fútbol con naturalidad.", medio: "TN",       pilar: "Humor" },
+  { titulo_corto: "Vidente pronostica el Mundial",   resumen: "Un supuesto vidente de las copas lanzó su pronóstico para el Mundial 2026, instalando expectativa y conversación lúdica.", medio: "Infobae", pilar: "Humor" },
+  { titulo_corto: "Messi preocupa a la Selección",   resumen: "La recuperación de Messi aparece como tema central para Scaloni y condiciona la planificación previa al Mundial.", medio: "TN",       pilar: "Equipo" },
+  { titulo_corto: "Primer rival con lesiones",       resumen: "El primer rival de Argentina llega con un panorama complejo de lesiones antes de definir su lista.", medio: "TN",       pilar: "Equipo" },
+  { titulo_corto: "Entradas FIFA bajo sospecha",     resumen: "La FIFA asegura entradas agotadas, pero todavía aparecen boletos disponibles en distintas sedes.", medio: "Infobae", pilar: "Controversia" },
+  { titulo_corto: "Investigan venta de entradas",    resumen: "Una investigación apunta a la venta de entradas para el Mundial 2026, sumando tensión sobre la transparencia del sistema.", medio: "Infobae", pilar: "Controversia" },
+  { titulo_corto: "Gesto viral de Messi",            resumen: "Messi protagonizó un momento inesperado con un fanático y el video se volvió viral, reforzando el vínculo con la hinchada.", medio: "TN",       pilar: "Color en la tribuna" },
+  { titulo_corto: "Camisetas argentinas en pareja",  resumen: "La novia de Senesi se probó camisetas de Argentina y eligieron juntos la más linda, activando conversación de hinchada.", medio: "Infobae", pilar: "Color en la tribuna" },
+  { titulo_corto: "Retiran estatua de Messi",        resumen: "Una estatua gigante de Messi en India será retirada, mostrando el alcance global del capitán argentino.", medio: "TN",       pilar: "Argentina por el mundo" },
+  { titulo_corto: "Canción del Mundial con Messi",   resumen: "Se lanzó el video oficial de la canción del Mundial 2026 con participación de Messi, posicionándolo como figura global.", medio: "TN",       pilar: "Argentina por el mundo" }
+];
+
+// ── Fallback: twitter posts ───────────────────────────────────
+const DUMMY_TWITTER_NEWS = [
+  { texto: "⚠️🇦🇷 LIONEL SCALONI ANUNCIARÁ MAÑANA LA LISTA DE CONVOCADOS DE ARGENTINA PARA EL MUNDIAL.", descripción: "La conversación gira en torno a la impaciencia por conocer la lista definitiva. Los usuarios bromean con el estilo 'misterioso' de Scaloni.", autor: "@AtaqueFutbolero", pilar: "Equipo",                  likes: 7651, reposts: 159, replies: 68  },
+  { texto: "🤯🇦🇷 Argentina va a llevar MÁS DE 30 JUGADORES a la GIRA PREVIA DEL MUNDIAL para los amistosos ante Islandia y Honduras.", descripción: "Críticas hacia Scaloni acusándolo de favorecer jugadores de Boca y River. Tono de desconfianza y enojo.", autor: "@sudanalytics_",   pilar: "Equipo",                  likes: 3624, reposts: 66,  replies: 160 },
+  { texto: "🇦🇷🇩🇿 SEÑORAS Y SEÑORES HAY GOL DE ARGELIA: En Blender hicieron un ritual para que Argentina se quede afuera en fase de grupos.", descripción: "Tono burlón hacia los hinchas argelinos. Predomina el humor irónico más que la ofensa.", autor: "@derechazoar",     pilar: "Humor",                   likes: 2326, reposts: 103, replies: 46  },
+  { texto: "Comienza el mundial y es un buen momento para recordar que cuando Argentina salió campeón en 2022, el litro de nafta salía 180 pesos.", descripción: "Tono nostálgico y comparativo. La conversación mezcla humor con desencanto por cómo cambió el país.", autor: "@etupito",          pilar: "Humor",                   likes: 522,  reposts: 121, replies: 37  },
+  { texto: "Hoy presenté una denuncia penal contra Claudio Tapia por la presunta venta de entradas protocolares del Mundial 2026.", descripción: "Fuerte rechazo hacia la AFA. Los comentarios apoyan la denuncia y expresan descontento contra Tapia.", autor: "@FacundoDelGaiso", pilar: "Controversia",           likes: 673,  reposts: 348, replies: 17  },
+  { texto: "Todos se rien pero después del mundial la selección Argentina va a despedir al Chiqui Tapia con la 10 en cancha...", descripción: "Comentarios irónicos. Consenso de rechazo hacia la figura de Tapia.", autor: "@GastonB777",       pilar: "Controversia",           likes: 88,   reposts: 0,   replies: 1   },
+  { texto: "No convoca a Barco y a Buendía para llevar a Masqueuncono y Low Celsius y el sábado cometo una locura", descripción: "Faceta más enfadada de la hinchada. Frustración por las decisiones de Scaloni.", autor: "@pomberobaitata",   pilar: "Color en la tribuna",    likes: 315,  reposts: 5,   replies: 6   },
+  { texto: "La gente se ríe pero después del mundial la selección va a despedir al Chiqui Tapia con la 10 en cancha...", descripción: "Humor negro para canalizar el rechazo hacia la AFA. La hinchada da por terminado el ciclo de Tapia.", autor: "@GastonB777",       pilar: "Color en la tribuna",    likes: 88,   reposts: 0,   replies: 1   },
+  { texto: "Vinicius eligió a la Selección Argentina entre las favoritas para el Mundial: 'Fueron los últimos campeones, tienen una gran confianza. Y tienen a Messi.'", descripción: "Orgullo y satisfacción por el reconocimiento internacional.", autor: "@ModoScaloneta",    pilar: "Argentina por el mundo", likes: 241,  reposts: 12,  replies: 3   },
+  { texto: "Lionel Messi se une a la selección argentina para el Mundial, pero aún no está en plena forma.", descripción: "Preocupación moderada por el estado físico de Messi, pero confianza en que llegará bien al torneo.", autor: "@Goal_en_espanol",  pilar: "Argentina por el mundo", likes: 23,   reposts: 2,   replies: 1   }
+];
+
+// ── Fallback: bubble chart ────────────────────────────────────
+const DUMMY_BUBBLE = [
+  { tema: "Estado físico de Messi",              engagement: 480000, views: 3500000, volumen: 13500 },
+  { tema: "Lista de 26 convocados",              engagement: 320000, views: 2100000, volumen:  9500 },
+  { tema: "Expectativas cuarta estrella",        engagement: 290000, views: 1800000, volumen:  8200 },
+  { tema: "Comentarios de Scaloni",              engagement: 260000, views: 1400000, volumen:  6800 },
+  { tema: "Fixture: debut vs Argelia",           engagement: 210000, views: 1200000, volumen:  7200 },
+  { tema: "Sorpresas: Buendía, Soulé",           engagement: 175000, views:  980000, volumen:  5100 },
+  { tema: "Hype en redes y calles",              engagement: 150000, views: 1100000, volumen:  4500 },
+  { tema: "Formación vs Argelia",                engagement: 120000, views:  780000, volumen:  4100 },
+  { tema: "30 jugadores en gira previa",         engagement:  95000, views:  650000, volumen:  3800 },
+  { tema: "Base en Kansas",                      engagement:  85000, views:  520000, volumen:  2900 }
+];
+
+// ── Fallback: beer ────────────────────────────────────────────
+const DUMMY_BEER = { temas: [
+  { marca: "Quilmes",   titulo: "CoRazones para creer - Nueva campaña de Quilmes para el Mundial 2026", resumen: "La icónica cerveza argentina lanza un spot que destaca la convicción del corazón y la pasión de los argentinos por la Selección en la previa al Mundial." },
+  { marca: "Michelob Ultra", titulo: "THE SUPERIOR MATCH - Campaña global oficial con Messi y Lautaro Martínez", resumen: "Patrocinadora oficial de la FIFA World Cup 2026, presenta una campaña con Lionel Messi y Lautaro Martínez celebrando el espíritu competitivo." },
+  { marca: "Anheuser-Busch", titulo: "Roster de marcas para el Mundial 2026", resumen: "Anheuser-Busch anuncia sus marcas líderes —Michelob Ultra y Stella Artois— como parte del patrocinio oficial del Mundial 2026, con foco en experiencias para fans." }
+]};
+
+// ── Fallback: competition ─────────────────────────────────────
+const DUMMY_COMPETITION = { temas: [
+  { marca: "Coca-Cola",         titulo: "La Selección Coca-Cola - Campaña con Scaloni y promociones Panini", resumen: "Coca-Cola Argentina lanzó su campaña protagonizada por Scaloni, con films emotivos, activaciones en puntos de venta y promoción de figuritas Panini para el Mundial 2026." },
+  { marca: "McDonald's",        titulo: "Combos McÁlvarez, McFernández y MacAllister + eventos en AFA", resumen: "McDonald's Argentina impulsa una campaña con hamburguesas inspiradas en jugadores de la Scaloneta, figuritas del Mundial y un evento en el predio de la AFA." },
+  { marca: "Coca-Cola / McDonald's", titulo: "Activaciones y promos de sponsors para el camino al Mundial", resumen: "Marcas líderes como Coca-Cola y McDonald's intensifican sus campañas con contenido emocional, promociones y activaciones para acompañar el debut de la Selección." }
+]};
+
+// ── Fallback: topics evolution ────────────────────────────────
+const DUMMY_TOPICS = { topics: [
+  { topic: "Lista de convocados Scaloni",               series: [{date:"2026-05-28",volume:9500},{date:"2026-05-29",volume:16000}] },
+  { topic: "Estado de Messi para el Mundial",           series: [{date:"2026-05-28",volume:13500},{date:"2026-05-29",volume:8000}] },
+  { topic: "Fixture Argentina vs Argelia",              series: [{date:"2026-05-28",volume:7200},{date:"2026-05-29",volume:9200}] },
+  { topic: "Expectativas Argentina cuarta estrella",    series: [{date:"2026-05-28",volume:8200},{date:"2026-05-29",volume:12050}] },
+  { topic: "Campañas publicitarias y sponsors Mundial", series: [{date:"2026-05-28",volume:4500},{date:"2026-05-29",volume:2300}] },
+  { topic: "Amistosos previos Scaloneta",               series: [{date:"2026-05-28",volume:3800},{date:"2026-05-29",volume:5600}] }
+]};
+
+// ── SVGs ──────────────────────────────────────────────────────
+const arrowSVG = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const X_ICON   = '<svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>';
+const likeIcon = '<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>';
+const rtIcon   = '<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M23.77 15.67a.75.75 0 0 0-1.06 0l-2.22 2.22V7.5a3.75 3.75 0 0 0-3.75-3.75H13.5a.75.75 0 0 0 0 1.5h3.24a2.25 2.25 0 0 1 2.25 2.25v10.39l-2.22-2.22a.75.75 0 1 0-1.06 1.06l3.5 3.5c.15.14.34.22.53.22s.38-.08.53-.22l3.5-3.5a.75.75 0 0 0 0-1.06zM7.5 18.75H4.26V8.36l2.22 2.22a.75.75 0 1 0 1.06-1.06l-3.5-3.5a.75.75 0 0 0-1.06 0l-3.5 3.5a.75.75 0 1 0 1.06 1.06l2.22-2.22V18.75A3.75 3.75 0 0 0 7.5 22.5h3.24a.75.75 0 0 0 0-1.5H7.5z"/></svg>';
+const repIcon  = '<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828a.5.5 0 0 0 .91.294l4.978-7.032a.5.5 0 0 0-.416-.782l-3.29.016c-.24 0-.448-.13-.562-.336a6.302 6.302 0 0 1 1.097-7.497l.003-.004a6.264 6.264 0 0 1 4.422-1.84.5.5 0 0 0 .499-.499v-1.2a.5.5 0 0 0-.499-.5z"/></svg>';
+
+// ── Helpers ───────────────────────────────────────────────────
+// Evita caché en archivos dinámicos para ver cambios sin F5
+function noCache(url) {
+  const sep = url.includes("?") ? "&" : "?";
+  return url + sep + "v=" + Date.now();
+}
+
+function buildLogoHTML(medio) {
+  const src = LOGOS[medio] || "";
+  const bg  = MEDIO_COLORS[medio]   || "#333";
+  const ini = MEDIO_INITIALS[medio] || medio.slice(0,2).toUpperCase();
+  return '<div class="medio-logo">'
+    + '<img src="' + src + '" alt="' + medio + '"'
+    + ' onload="this.style.display=\'block\';this.parentElement.querySelector(\'.initials\').style.display=\'none\';"'
+    + ' onerror="this.style.display=\'none\';this.parentElement.querySelector(\'.initials\').style.display=\'flex\';"'
+    + ' style="display:block"/>'
+    + '<div class="initials" style="background:' + bg + ';">' + ini + '</div>'
+    + '</div>';
+}
+
+function extractHandle(autor) {
+  const m = (autor||'').match(/@(\S+?)\)?$/);
+  return m ? '@' + m[1].replace(/[)]/g, '') : autor;
+}
+
+function fmtNum(n) {
+  if (n >= 1000000) return (n/1000000).toFixed(1) + "M";
+  if (n >= 1000)    return (n/1000).toFixed(1).replace('.0','') + "K";
+  return String(n);
+}
+
+function fmtVol(n) {
+  if (n >= 1000000) return (n/1000000).toFixed(1)+"M";
+  if (n >= 1000)    return Math.round(n/1000)+"K";
+  return String(n);
+}
+
+// ── Portales card ─────────────────────────────────────────────
+function buildCard(item) {
+  const gc  = item.gold ? " gold" : "";
+  const url = item.url || item.link || "";
+  const open = url ? "window.open('" + url + "','_blank')" : "";
+  const onclick = url ? ' onclick="' + open + '"' : "";
+  return '<div class="card' + gc + '"' + onclick + '>'
+    + '<div class="card-top"><div class="card-header">'
+    + '<div class="card-title">' + item.titulo_corto + '</div>'
+    + '<div class="arrow-wrap">' + arrowSVG + '</div>'
+    + '</div><p class="card-summary">' + item.resumen + '</p></div>'
+    + '<div style="display:flex;flex-direction:column;gap:14px;">'
+    + '<div class="card-divider"></div>'
+    + '<div class="card-footer">' + buildLogoHTML(item.medio)
+    + '<span class="medio-name">' + item.medio + '</span></div></div></div>';
+}
+
+
+// ── Twitter card ──────────────────────────────────────────────
+function buildTwitterCard(item) {
+  const gc      = item.gold ? " gold" : "";
+  const handle  = extractHandle(item.autor || "");
+  const texto   = (item.posteo_destacado || "").replace(/\n/g, ' ');
+  const desc    = item.resumen || "";
+  const likes   = item.likes   || 0;
+  const reposts = item.reposts || 0;
+  const replies = item.replies || 0;
+  const url     = item.link || item.url || "";
+  const open    = url ? "window.open('" + url + "','_blank')" : "";
+  const onclick = url ? ' onclick="' + open + '"' : "";
+  return '<div class="card' + gc + '"' + onclick + '>'
+    + '<div class="card-top" style="gap:6px;">'
+    + '<div class="tweet-text">' + texto + '</div>'
+    + '<p class="tweet-desc">' + desc + '</p>'
+    + '</div>'
+    + '<div style="display:flex;flex-direction:column;gap:0;">'
+    + '<div class="tweet-metrics">'
+    + '<span class="metric">' + likeIcon + ' ' + fmtNum(likes)   + '</span>'
+    + '<span class="metric">' + rtIcon   + ' ' + fmtNum(reposts) + '</span>'
+    + '<span class="metric">' + repIcon  + ' ' + fmtNum(replies) + '</span>'
+    + '</div>'
+    + '<div class="card-divider"></div>'
+    + '<div class="card-footer" style="margin-top:13px;">'
+    + '<div class="x-logo-wrap">' + X_ICON + '</div>'
+    + '<span class="medio-name">' + handle + '</span>'
+    + '</div></div></div>';
+}
+
+
+// ── Render dashboard (generic) ────────────────────────────────
+function renderDashboard(data, targetId, cardFn) {
+  // Pillars present in data, ordered by PILLARS list first, then any extras
+  const inData = [...new Set(data.map(d => d.pilar || d.Pilar).filter(Boolean))];
+  const ordered = PILLARS.filter(p => inData.includes(p));
+  const extras  = inData.filter(p => !PILLARS.includes(p));
+  const presentPillars = [...ordered, ...extras];
+  const el = document.getElementById(targetId);
+  if (!el) return;
+  el.innerHTML = "";
+  el.style.gridTemplateColumns = "repeat(" + presentPillars.length + ", 1fr)";
+  presentPillars.forEach(pilar => {
+    const items = data.filter(d => (d.pilar || d.Pilar) === pilar);
+    const col   = document.createElement("div");
+    col.className = "column";
+    col.innerHTML = '<div class="column-title">' + pilar + '</div>' + items.map(cardFn).join("");
+    el.appendChild(col);
+  });
+}
+
+function prepPortales(data) {
+  return data.map(item => ({ ...item, gold: GOLD_KEYS.some(k => item.titulo_corto.toLowerCase().includes(k)) }));
+}
+function prepTwitter(data) {
+  return data.map(item => ({ ...item, gold: (item.pilar || item.Pilar) === "Argentina por el mundo" || GOLD_KEYS.some(k => (item.posteo_destacado || '').toLowerCase().includes(k)) }));
+}
+
+// ── Fetch portales ────────────────────────────────────────────
+function parsePortalesJSON(json) {
+  if (Array.isArray(json)) return json;
+  if (json.pilares) {
+    const MAP = { "Hinchada disruptiva": "Color en la tribuna" };
+    const data = [];
+    Object.entries(json.pilares).forEach(([pilar, items]) => {
+      const p = MAP[pilar] || pilar;
+      items.forEach(item => data.push({ ...item, pilar: p }));
+    });
+    return data;
+  }
+  return [];
+}
+
+async function initPortales() {
+  try {
+    const res = await fetch(noCache(RAW_JSON));
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const json = await res.json();
+    renderDashboard(prepPortales(parsePortalesJSON(json)), "dashboard", buildCard);
+    window._overviewCache = json.overview || null;
+  } catch(e) {
+    console.warn("Portales JSON failed:", e.message);
+    renderDashboard(prepPortales(DUMMY_NEWS), "dashboard", buildCard);
+  }
+}
+
+// ── Fetch twitter posts ───────────────────────────────────────
+function parseTwitterJSON(json) {
+  if (Array.isArray(json)) return json;
+  if (json.pilares) {
+    const MAP = { "Hinchada disruptiva": "Color en la tribuna" };
+    const data = [];
+    Object.entries(json.pilares).forEach(([pilar, items]) => {
+      const p = MAP[pilar] || pilar;
+      items.forEach(item => data.push({ ...item, pilar: p }));
+    });
+    return data;
+  }
+  return [];
+}
+
+async function initTwitterPosts() {
+  try {
+    const res = await fetch(noCache(TWITTER_JSON));
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    renderDashboard(prepTwitter(parseTwitterJSON(await res.json())), "dashboard-twitter", buildTwitterCard);
+  } catch(e) {
+    console.warn("Twitter posts JSON failed:", e.message);
+    renderDashboard(prepTwitter(DUMMY_TWITTER_NEWS), "dashboard-twitter", buildTwitterCard);
+  }
+}
+
+// ── Bubble chart ──────────────────────────────────────────────
+function renderBubbleChart(raw) {
+  const num = v => Number.isFinite(Number(v)) ? Number(v) : 0;
+  const data = (raw || []).map(d => {
+    const likes   = num(d.likes ?? d.Likes);
+    const reposts = num(d.reposts ?? d.Reposts);
+    const replies = num(d.replies ?? d.Replies);
+    const tema = String(d.tema ?? d.topic ?? d.name ?? d.titulo ?? "Tema");
+    const engagement = num(d.engagement ?? d.Engagement ?? d.interacciones ?? (likes + reposts));
+    const views = num(d.views ?? d.Views ?? d.visualizaciones ?? d.impresiones ?? d.reach ?? d.alcance ?? Math.max(engagement * 8, 1));
+    const volumen = num(d.volumen ?? d.volume ?? d.Volumen ?? d.menciones ?? replies ?? 1);
+    return { ...d, tema, engagement, views, volumen, isMessi: tema.toLowerCase().includes("messi") };
+  }).filter(d => Number.isFinite(d.engagement) && Number.isFinite(d.views) && Number.isFinite(d.volumen));
+
+  const canvas = document.getElementById("bubbleCanvas");
+  if (!canvas || data.length === 0) return;
+
+  const body  = canvas.parentElement;
+  const DPR   = window.devicePixelRatio || 1;
+  const W_CSS = Math.max(1, body.clientWidth);
+  const H_CSS = Math.max(1, body.clientHeight);
+  canvas.width  = Math.round(W_CSS * DPR);
+  canvas.height = Math.round(H_CSS * DPR);
+  canvas.style.width = W_CSS + "px";
+  canvas.style.height = H_CSS + "px";
+
+  const ctx = canvas.getContext("2d");
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  ctx.clearRect(0, 0, W_CSS, H_CSS);
+
+  const W = W_CSS, H = H_CSS;
+  const PAD = { top: 12, right: 20, bottom: 34, left: 42 };
+  const plotW = Math.max(1, W - PAD.left - PAD.right);
+  const plotH = Math.max(1, H - PAD.top  - PAD.bottom);
+
+  const engVals  = data.map(d => d.engagement);
+  const viewVals = data.map(d => d.views);
+  const volVals  = data.map(d => d.volumen);
+  const minEng   = Math.min(...engVals),  maxEng   = Math.max(...engVals);
+  const minViews = Math.min(...viewVals), maxViews = Math.max(...viewVals);
+  const minVol   = Math.min(...volVals),  maxVol   = Math.max(...volVals);
+
+  const domain = (min, max) => {
+    if (min === max) {
+      const pad = Math.max(1, max * 0.20);
+      return [Math.max(0, min - pad), max + pad];
+    }
+    const pad = (max - min) * 0.16;
+    return [Math.max(0, min - pad), max + pad];
+  };
+  const [engMin, engMax] = domain(minEng, maxEng);
+  const [viewsMin, viewsMax] = domain(minViews, maxViews);
+
+  const scaleX = v => PAD.left + ((v - engMin) / (engMax - engMin || 1)) * plotW;
+  const scaleY = v => PAD.top + (1 - ((v - viewsMin) / (viewsMax - viewsMin || 1))) * plotH;
+  const scaleR = v => {
+    const t = (v - minVol) / (maxVol - minVol || 1);
+    const maxR = Math.max(16, Math.min(36, Math.min(plotW, plotH) * 0.115));
+    const minR = Math.max(7, Math.min(12, maxR * 0.34));
+    return minR + Math.sqrt(Math.max(0, t)) * (maxR - minR);
+  };
+  const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
+
+  const nodes = data.map(d => {
+    const r = scaleR(d.volumen);
+    const minX = PAD.left + r;
+    const maxX = PAD.left + plotW - r;
+    const minY = PAD.top + r;
+    const maxY = PAD.top + plotH - r;
+    const sx = scaleX(d.engagement);
+    const sy = scaleY(d.views);
+    return { ...d, r, targetX: clamp(sx, minX, maxX), targetY: clamp(sy, minY, maxY), x: clamp(sx, minX, maxX), y: clamp(sy, minY, maxY) };
+  });
+
+  // Collision relaxation: softer than the previous version, so the bubbles stay
+  // close to their real values while avoiding overlap.
+  const GAP = Math.max(4, Math.min(9, Math.min(plotW, plotH) * 0.018));
+  for (let iter = 0; iter < 90; iter++) {
+    for (let i = 0; i < nodes.length; i++) {
+      const a = nodes[i];
+      a.x += (a.targetX - a.x) * 0.065;
+      a.y += (a.targetY - a.y) * 0.065;
+      for (let j = i + 1; j < nodes.length; j++) {
+        const b = nodes[j];
+        let dx = b.x - a.x;
+        let dy = b.y - a.y;
+        let dist = Math.hypot(dx, dy) || 0.01;
+        const minDist = a.r + b.r + GAP;
+        if (dist < minDist) {
+          const push = (minDist - dist) * 0.42;
+          dx /= dist; dy /= dist;
+          a.x -= dx * push * 0.5; a.y -= dy * push * 0.5;
+          b.x += dx * push * 0.5; b.y += dy * push * 0.5;
+        }
+      }
+    }
+    nodes.forEach(n => {
+      n.x = clamp(n.x, PAD.left + n.r, PAD.left + plotW - n.r);
+      n.y = clamp(n.y, PAD.top + n.r, PAD.top + plotH - n.r);
+    });
+  }
+
+  ctx.strokeStyle="rgba(90,105,148,0.7)"; ctx.lineWidth=1.5; ctx.setLineDash([5,5]);
+  ctx.beginPath(); ctx.moveTo(PAD.left,PAD.top); ctx.lineTo(PAD.left,PAD.top+plotH); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(PAD.left,PAD.top+plotH); ctx.lineTo(PAD.left+plotW,PAD.top+plotH); ctx.stroke();
+  ctx.setLineDash([]);
+
+  ctx.fillStyle="rgba(238,240,248,0.75)"; ctx.font="600 10px 'DM Sans',sans-serif";
+  ctx.textBaseline="middle"; ctx.textAlign="center";
+  ctx.fillText("Engagement (likes + reposts)", PAD.left+plotW/2, PAD.top+plotH+20);
+  ctx.save(); ctx.translate(PAD.left-27,PAD.top+plotH/2); ctx.rotate(-Math.PI/2);
+  ctx.textAlign="center"; ctx.fillText("Views (total)",0,0); ctx.restore();
+
+  const sorted = [...nodes].sort((a,b)=>+a.isMessi-+b.isMessi);
+  sorted.forEach(d => {
+    const r=d.r, x=d.x, y=d.y;
+    const sentiment = String(d.sentiment || d.Sentiment || "Neutral").toLowerCase();
+    const lg=ctx.createLinearGradient(x-r,y,x+r,y);
+    if(sentiment === "positive"){lg.addColorStop(0,"rgba(63,184,122,0.88)");lg.addColorStop(1,"rgba(45,145,95,0.78)");}
+    else if(sentiment === "negative"){lg.addColorStop(0,"rgba(224,72,72,0.88)");lg.addColorStop(1,"rgba(170,52,52,0.78)");}
+    else{lg.addColorStop(0,"rgba(122,129,158,0.85)");lg.addColorStop(1,"rgba(74,81,112,0.75)");}
+    ctx.fillStyle=lg; ctx.strokeStyle=sentiment === "positive"?"rgba(63,184,122,0.5)":sentiment === "negative"?"rgba(224,72,72,0.5)":"rgba(122,129,158,0.4)";
+    ctx.lineWidth=1; ctx.beginPath(); ctx.arc(x,y,r,0,Math.PI*2); ctx.fill(); ctx.stroke();
+  });
+  sorted.forEach(d => {
+    const r=d.r, x=d.x, y=d.y;
+    const fs=Math.max(9,Math.min(12,r*0.30));
+    ctx.font="600 "+fs+"px 'DM Sans',sans-serif"; ctx.textBaseline="middle";
+    const tw=ctx.measureText(d.tema).width;
+    let lx,align;
+    if(x+r+7+tw<PAD.left+plotW){lx=x+r+7;align="left";}
+    else if(x-r-7-tw>PAD.left){lx=x-r-7;align="right";}
+    else{lx=x;align="center";}
+    ctx.textAlign=align; ctx.fillStyle=d.isMessi?"#e8ca7a":"rgba(160,175,215,0.9)";
+    ctx.shadowColor="rgba(0,0,0,0.65)"; ctx.shadowBlur=5;
+    ctx.fillText(d.tema,lx,y); ctx.shadowBlur=0;
+  });
+}
+let bubbleDataCache = null;
+function rerenderBubbleIfVisible() {
+  const slide = document.getElementById("slide-3");
+  if (bubbleDataCache && slide && slide.classList.contains("active")) renderBubbleChart(bubbleDataCache);
+}
+async function initBubble() {
+  try {
+    const res = await fetch(noCache(BUBBLE_JSON));
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const json = await res.json();
+    bubbleDataCache = json.topics || json;
+  } catch(e) {
+    console.warn("Bubble JSON failed:", e.message);
+    bubbleDataCache = DUMMY_BUBBLE;
+  }
+  renderBubbleChart(bubbleDataCache);
+}
+
+// ── Sparkline ─────────────────────────────────────────────────
+function drawSparkline(canvas, vals, color) {
+  if (!canvas || vals.length === 0) return;
+  const DPR=window.devicePixelRatio||1;
+  const W=canvas.offsetWidth||120, H=canvas.offsetHeight||28;
+  canvas.width=W*DPR; canvas.height=H*DPR;
+  const ctx=canvas.getContext("2d"); ctx.scale(DPR,DPR);
+
+  // Single point → gray dot in center
+  if (vals.length === 1) {
+    ctx.fillStyle = "#4a5170";
+    ctx.beginPath(); ctx.arc(W/2, H/2, 3, 0, Math.PI*2); ctx.fill();
+    return;
+  }
+
+  const max=Math.max(...vals), min=Math.min(...vals), pad=4;
+  const range = max - min || 1;
+  const pts = vals.map((v,i) => ({
+    x: pad + i*(W-pad*2)/(vals.length-1),
+    y: H-pad-((v-min)/range)*(H-pad*2)
+  }));
+
+  // Line
+  ctx.beginPath();
+  pts.forEach((p,i) => i===0 ? ctx.moveTo(p.x,p.y) : ctx.lineTo(p.x,p.y));
+  ctx.strokeStyle=color; ctx.lineWidth=1.5; ctx.lineJoin="round"; ctx.stroke();
+
+  // Dot at each point
+  pts.forEach(p => {
+    ctx.beginPath(); ctx.arc(p.x, p.y, 2.5, 0, Math.PI*2);
+    ctx.fillStyle=color; ctx.fill();
+  });
+}
+
+// ── Brand news column ─────────────────────────────────────────
+function buildNewsCol(title, temas) {
+  const col = document.createElement("div");
+  col.className = "news-col";
+  col.innerHTML = '<div class="news-col-title">' + title + '</div>';
+  temas.forEach(t => {
+    const card = document.createElement("div");
+    card.className = "brand-card";
+    card.innerHTML = '<div class="brand-header">'
+      + '<span class="brand-marca">' + t.marca + '</span>'
+      + '<span class="brand-sep">|</span>'
+      + '<span class="brand-titulo">' + t.titulo + '</span>'
+      + '</div>'
+      + '<p class="brand-resumen">' + t.resumen + '</p>';
+    col.appendChild(card);
+  });
+  return col;
+}
+
+// ── Topic evolution ───────────────────────────────────────────
+function buildTopicsSection(topicsData) {
+  const bottom = document.createElement("div");
+  bottom.className = "right-bottom";
+  bottom.innerHTML = '<div class="right-bottom-title">Evolución de temas</div>';
+  const grid = document.createElement("div");
+  grid.className = "topic-grid";
+  topicsData.forEach(t => {
+    const vals  = t.series.map(s => s.volume);
+    const last  = vals[vals.length - 1];
+    const single = vals.length === 1;
+    const prev  = !single ? vals[vals.length - 2] : null;
+    const diff  = prev !== null ? last - prev : 0;
+    const pct   = (prev && prev !== 0) ? Math.round((diff/prev)*100) : 0;
+    const isUp  = diff > 0;
+    const isFlat= diff === 0 || single;
+    const deltaClass = single ? "delta-flat" : isFlat ? "delta-flat" : isUp ? "delta-up" : "delta-down";
+    const deltaSign  = single ? "" : isFlat ? "–" : isUp ? "+" : "";
+    const deltaText  = single ? "sin historial" : isFlat ? "–" : deltaSign + Math.abs(pct) + "%";
+    const color = single ? "#4a5170" : isFlat ? "#4a5170" : isUp ? "#3fb87a" : "#e04848";
+    const card  = document.createElement("div");
+    card.className = "topic-card";
+    card.innerHTML = '<div class="topic-name">' + t.topic + '</div>'
+      + '<div class="topic-vol">' + fmtVol(last) + '</div>'
+      + '<div class="topic-delta ' + deltaClass + '">' + deltaText + '</div>'
+      + '<canvas class="topic-canvas"></canvas>';
+    grid.appendChild(card);
+    // draw sparkline after DOM paint
+    requestAnimationFrame(() => {
+      const cv = card.querySelector(".topic-canvas");
+      if (cv) drawSparkline(cv, vals, color);
+    });
+  });
+  bottom.appendChild(grid);
+  return bottom;
+}
+
+// ── Init right panel ──────────────────────────────────────────
+async function initRightPanel() {
+  const container = document.getElementById("slide2-right");
+  if (!container) return;
+  container.innerHTML = "";
+
+  // Fetch all three in parallel
+  const [beerData, compData, topicsData] = await Promise.all([
+    fetch(noCache(BEER_JSON)).then(r => r.ok ? r.json() : Promise.reject()).catch(() => DUMMY_BEER),
+    fetch(noCache(COMPETITION_JSON)).then(r => r.ok ? r.json() : Promise.reject()).catch(() => DUMMY_COMPETITION),
+    fetch(noCache(TOPICS_JSON)).then(r => r.ok ? r.json() : Promise.reject()).catch(() => DUMMY_TOPICS)
+  ]);
+
+  // Top row: beer + competition
+  const topRow = document.createElement("div");
+  topRow.className = "right-top";
+  topRow.appendChild(buildNewsCol("🍺 Conversación Cerveza", (beerData.temas || [])));
+  topRow.appendChild(buildNewsCol("🏆 Competencia", (compData.temas || [])));
+  container.appendChild(topRow);
+
+  // Bottom: topic evolution
+  container.appendChild(buildTopicsSection(topicsData.topics || []));
+}
+
+
+window.addEventListener("resize", () => {
+  clearTimeout(window.__bubbleResizeTimer);
+  window.__bubbleResizeTimer = setTimeout(rerenderBubbleIfVisible, 120);
+});
+
+
+// ── Slide rotation ────────────────────────────────────────────
+(function() {
+  const slides = [
+    document.getElementById("slide-1"),
+    document.getElementById("slide-2"),
+    document.getElementById("slide-3")
+  ];
+  let current        = 0;
+  let bubbleRendered = false;
+  const footerLabels = ["Portales de Noticias", "X (Twitter)", "X (Twitter)"];
+  setInterval(() => {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+    const fl = document.getElementById("footer-left");
+    fl.style.opacity = "0";
+    setTimeout(() => { fl.textContent = footerLabels[current]; fl.style.opacity = "1"; }, 400);
+    if (current === 2 && !bubbleRendered) {
+      bubbleRendered = true;
+      setTimeout(initBubble, 50);
+    }
+  }, SLIDE_INTERVAL_MS);
+})();
+
+// ── Boot + auto refresh ───────────────────────────────────────
+async function refreshDashboardData() {
+  await Promise.allSettled([
+    initRightPanel(),
+    initPortales(),
+    initTwitterPosts(),
+    initBubble()
+  ]);
+}
+
+refreshDashboardData();
+setInterval(refreshDashboardData, DATA_REFRESH_INTERVAL_MS);
+</script>
+</body>
+</html>
