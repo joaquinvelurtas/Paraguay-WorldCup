@@ -2,87 +2,68 @@
   "pilares": {
     "Humor": [
       {
-        "titulo_corto": "Gatito vidente elige ganador",
-        "resumen": "Yunyi, un gatito vidente, anticipa el resultado del partido de Paraguay y suma superstición, humor y conversación viral a la previa albirroja.",
+        "titulo_corto": "Mundial y tele en pareja",
+        "resumen": "Una consulta retrata al Mundial y la televisión como motivo de pelea de pareja, llevando la fiebre mundialista a una escena doméstica y liviana.",
         "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/la-prediccion-de-yunyi-el-gatito-vidente-ya-eligio-quien-gana-el-partido-de-manana"
-      },
-      {
-        "titulo_corto": "Sampaio se vuelve viral",
-        "resumen": "Un momento viral de Sampaio entra en la conversación mundialista paraguaya y activa un registro liviano, ideal para humor y comentarios rápidos.",
-        "medio": "d10",
-        "url": "https://d10.ultimahora.com/viral-momento-de-sampaio"
+        "url": "https://www.extra.com.py/consultorio-del-amor/el-mundial-y-la-tele-son-un-motivo-de-pelea-con-mi-marido"
       }
     ],
     "Equipo": [
       {
-        "titulo_corto": "Debut de la Albirroja",
-        "resumen": "Paraguay debuta ante Estados Unidos en el Mundial 2026, con foco en Alfaro, Diego Gómez y el regreso albirrojo a la máxima cita.",
+        "titulo_corto": "Alfaro ajusta ante Turquía",
+        "resumen": "Gustavo Alfaro analiza variantes en Paraguay tras el debut y enfoca la preparación del equipo para el partido clave ante Turquía.",
         "medio": "abc",
-        "url": "https://www.abc.com.py/deportes/futbol/mundial-de-futbol/2026/06/12/estados-unidos-vs-paraguay-debut-mundialista-en-vivo"
+        "url": "https://www.abc.com.py/deportes/futbol/seleccion-paraguaya/2026/06/15/gustavo-alfaro-analiza-variantes-y-apunta-a-turquia"
       },
       {
-        "titulo_corto": "Regreso tras 16 años",
-        "resumen": "La nota marca el retorno de Paraguay a una Copa del Mundo después de 16 años y refuerza el peso emocional del debut albirrojo.",
+        "titulo_corto": "Dudas en el campamento",
+        "resumen": "La Albirroja registra inconvenientes con dos jugadores durante la preparación mundialista, un punto sensible para definir el equipo.",
         "medio": "vssports",
-        "url": "https://www.vssports.com.py/versus/2026/06/12/paraguay-se-muestra-en-la-copa-del-mundo-tras-16-largos-anos"
+        "url": "https://www.vssports.com.py/versus/2026/06/16/inconvenientes-con-dos-jugadores-en-campamento-de-la-albirroja"
       }
     ],
     "Controversia": [
       {
-        "titulo_corto": "Trump evita debut albirrojo",
-        "resumen": "Santiago Peña viajará a la Copa, pero la ausencia de Trump en el debut paraguayo instala una lectura política y diplomática del Mundial.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/santi-pena-ira-a-la-copa-pero-trump-le-hace-el-vacio-al-debut-de-la-albirroja"
+        "titulo_corto": "Cabañas habla de pánico",
+        "resumen": "Salvador Cabañas cuestiona el debut paraguayo y habla de pánico escénico, instalando una lectura dura sobre el golpe mundialista.",
+        "medio": "cronica",
+        "url": "https://www.cronica.com.py/2026/06/15/sufrieron-como-panico-escenico-hei-el-mariscal-cabanas"
       },
       {
-        "titulo_corto": "Colegio prohíbe camiseta",
-        "resumen": "Un colegio privado prohíbe usar la camiseta de Paraguay en plena euforia mundialista y abre debate sobre identidad, reglas y símbolos.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/colegio-prive-prohibe-usar-la-camiseta-de-la-seleccion-paraguaya"
+        "titulo_corto": "Hipótesis tras el 4 a 1",
+        "resumen": "La goleada sufrida por Paraguay abre hipótesis y preguntas sobre una actuación rara, con foco en el impacto del resultado.",
+        "medio": "latribuna",
+        "url": "https://www.latribuna.com.py/deportes/2026/06/16/el-eco-del-4-a-1-las-hipotesis-que-no-callan-sobre-una-rara-paraguay"
       }
     ],
     "Color en la tribuna": [
       {
-        "titulo_corto": "Abues rezan por Paraguay",
-        "resumen": "Adultos mayores rezarán para bendecir a la Albirroja antes del debut, sumando fe, ternura y ritual comunitario a la previa mundialista.",
+        "titulo_corto": "Bajón en supermercados",
+        "resumen": "La derrota de la Albirroja se refleja en el ánimo social y llega hasta los supermercados, mostrando cómo el Mundial atraviesa la rutina.",
         "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/abues-rezaran-para-bendecir-a-la-albirroja-en-su-debut-mundialista"
+        "url": "https://www.extra.com.py/actualidad/consecuencias-de-la-derrota-albirroja-bajon-llego-hasta-los-super"
       },
       {
-        "titulo_corto": "Mbeju albirrojo",
-        "resumen": "Preparan mbeju con los colores de la Albirroja para San Juan, mezclando tradición paraguaya, comida popular y clima mundialista.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/fama/san-juan-mundialista-preparan-mbeju-con-los-colores-de-la-albirroja"
+        "titulo_corto": "Mundial de colores",
+        "resumen": "La cobertura destaca la diversidad de hinchas, símbolos y expresiones que rodean al Mundial y alimentan el color popular del torneo.",
+        "medio": "latribuna",
+        "url": "https://www.latribuna.com.py/deportes/2026/06/15/el-mundial-de-todos-los-colores"
       }
     ],
     "Paraguay por el mundo": [
       {
-        "titulo_corto": "Laurys retenida en EE.UU.",
-        "resumen": "Laurys Dyva y Rosy Alderete habrían sido retenidas en un aeropuerto de Estados Unidos, llevando figuras paraguayas a la previa mundialista.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/fama/retienen-a-laurys-dyva-y-a-rosy-alderete-en-aeropuerto-de-estados-unidos-dicen"
+        "titulo_corto": "Remesas y diáspora",
+        "resumen": "La nota vincula a paraguayos en España y Argentina con flujos de remesas, útil para leer a Paraguay fuera del país en contexto mundialista.",
+        "medio": "infonegocios",
+        "url": "https://infonegocios.com.py/nota-principal/remesas-paraguayas-espana-y-argentina-lideran-la-lista-de-paises-de-origen-enviaron-us-318-9-millones-en-el-primer-trimestre"
       },
       {
-        "titulo_corto": "Albirroja ante el mundo",
-        "resumen": "La Albirroja aparece ante la mirada internacional en el Mundial 2026, reforzando la presencia de Paraguay en el escenario global.",
-        "medio": "adndigital",
-        "url": "https://www.adndigital.com.py/la-albirroja-ante-los-ojos-del-mundo"
+        "titulo_corto": "Tim Payne viral a Olimpia",
+        "resumen": "El viral mundialista Tim Payne aparece ligado a una posible incorporación a Olimpia, conectando el torneo global con el fútbol paraguayo.",
+        "medio": "npy",
+        "url": "https://www.npy.com.py/noticias/deportes/olimpia-sorprende-con-la-posible-incorporacion-del-viral-tim-payne"
       }
     ],
-    "Alcohol": [
-      {
-        "titulo_corto": "Cerveza baja por Mundial",
-        "resumen": "El presidente de Ecuador ordena bajar el precio de la cerveza por el Mundial, uniendo consumo, fútbol y clima popular alrededor del torneo.",
-        "medio": "vssports",
-        "url": "https://www.vssports.com.py/versus/2026/06/12/el-presidente-de-ecuador-ordena-bajar-de-precio-la-cerveza-por-el-mundial"
-      },
-      {
-        "titulo_corto": "Una cerveza por eliminado",
-        "resumen": "Un hincha inglés promete tomar una cerveza por cada selección eliminada del Mundial, generando una historia viral sobre alcohol y fanatismo.",
-        "medio": "ole",
-        "url": "https://www.ole.com.ar/fuera-de-juego/mundial-gus-hully-cerveza-entrevista-higado-chile-mundial_0_MdV2jBrrao.html"
-      }
-    ]
+    "Alcohol": []
   }
 }
