@@ -306,6 +306,40 @@
     font-size: 12.5px; font-weight: 600; color: var(--text-secondary);
     display: flex; align-items: center; gap: 7px; white-space: nowrap;
   }
+
+  .slide-controls {
+    position: absolute;
+    left: 235px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 101;
+  }
+  .control-btn {
+    background: var(--col-bg);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 18px;
+    padding: 6px 11px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+    line-height: 1;
+    min-width: 30px;
+  }
+  .control-btn.wide {
+    min-width: 76px;
+  }
+  .control-btn:hover {
+    background: var(--card-hover);
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+  }
+
   .dot { width: 7px; height: 7px; border-radius: 50%; background: #c9a84c; }
 
 </style>
@@ -334,6 +368,11 @@
   <div class="footer-left-group">
     <img class="footer-mascot" src="barddur.png" alt="Barddur" onerror="this.style.display='none'"/>
     <span class="bottom-label" id="footer-left">Portales de Noticias</span>
+  </div>
+  <div class="slide-controls">
+    <button id="prevSlide" class="control-btn" type="button">‹</button>
+    <button id="pauseSlide" class="control-btn wide" type="button">Pausar</button>
+    <button id="nextSlide" class="control-btn" type="button">›</button>
   </div>
   <div class="bottom-pill"><span class="dot"></span>Newsroom WC 2026</div>
   <div style="display:flex;align-items:center;gap:10px;">
@@ -945,28 +984,95 @@ window.addEventListener("resize", () => {
 });
 
 
-// ── Slide rotation ────────────────────────────────────────────
+// ── Slide rotation + controls ─────────────────────────────────
 (function() {
   const slides = [
     document.getElementById("slide-1"),
     document.getElementById("slide-2"),
     document.getElementById("slide-3")
   ];
-  let current        = 0;
+
+  let current = 0;
   let bubbleRendered = false;
+  let isPaused = false;
+  let slideTimer = null;
+
   const footerLabels = ["Portales de Noticias", "X (Twitter)", "X (Twitter)"];
-  setInterval(() => {
-    slides[current].classList.remove("active");
-    current = (current + 1) % slides.length;
-    slides[current].classList.add("active");
+
+  function updateFooter() {
     const fl = document.getElementById("footer-left");
+    if (!fl) return;
+
     fl.style.opacity = "0";
-    setTimeout(() => { fl.textContent = footerLabels[current]; fl.style.opacity = "1"; }, 400);
+    setTimeout(() => {
+      fl.textContent = footerLabels[current];
+      fl.style.opacity = "1";
+    }, 400);
+  }
+
+  function showSlide(index) {
+    slides[current].classList.remove("active");
+
+    current = (index + slides.length) % slides.length;
+
+    slides[current].classList.add("active");
+    updateFooter();
+
     if (current === 2 && !bubbleRendered) {
       bubbleRendered = true;
       setTimeout(initBubble, 50);
+    } else if (current === 2) {
+      setTimeout(rerenderBubbleIfVisible, 50);
     }
-  }, SLIDE_INTERVAL_MS);
+  }
+
+  function nextSlide() {
+    showSlide(current + 1);
+  }
+
+  function prevSlide() {
+    showSlide(current - 1);
+  }
+
+  function startAutoRotation() {
+    stopAutoRotation();
+    slideTimer = setInterval(nextSlide, SLIDE_INTERVAL_MS);
+  }
+
+  function stopAutoRotation() {
+    if (slideTimer) {
+      clearInterval(slideTimer);
+      slideTimer = null;
+    }
+  }
+
+  function togglePause() {
+    isPaused = !isPaused;
+
+    const btn = document.getElementById("pauseSlide");
+
+    if (isPaused) {
+      stopAutoRotation();
+      if (btn) btn.textContent = "Reanudar";
+    } else {
+      startAutoRotation();
+      if (btn) btn.textContent = "Pausar";
+    }
+  }
+
+  document.getElementById("pauseSlide")?.addEventListener("click", togglePause);
+
+  document.getElementById("nextSlide")?.addEventListener("click", () => {
+    nextSlide();
+    if (!isPaused) startAutoRotation();
+  });
+
+  document.getElementById("prevSlide")?.addEventListener("click", () => {
+    prevSlide();
+    if (!isPaused) startAutoRotation();
+  });
+
+  startAutoRotation();
 })();
 
 // ── Boot + auto refresh ───────────────────────────────────────
