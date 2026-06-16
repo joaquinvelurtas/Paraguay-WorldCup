@@ -4,56 +4,38 @@
       "topic": "Arranca el Mundial 2026",
       "series": [
         {"date": "2026-06-11", "volume": 12500},
-        {"date": "2026-06-12", "volume": 11500}
+        {"date": "2026-06-12", "volume": 11500},
+        {"date": "2026-06-16", "volume": 8500}
       ]
     },
     {
-      "topic": "Hype hinchas y expectativa WC",
+      "topic": "Derrota Paraguay 4-1 vs USA",
       "series": [
-        {"date": "2026-06-09", "volume": 1900},
-        {"date": "2026-06-10", "volume": 2800},
-        {"date": "2026-06-11", "volume": 5800},
-        {"date": "2026-06-12", "volume": 4800}
+        {"date": "2026-06-16", "volume": 1400}
       ]
     },
     {
-      "topic": "Ilusión por inicio del Mundial",
+      "topic": "Reacciones hinchas Albirroja",
       "series": [
-        {"date": "2026-05-27", "volume": 5800},
-        {"date": "2026-05-28", "volume": 8200},
-        {"date": "2026-05-29", "volume": 7800},
-        {"date": "2026-06-01", "volume": 7500},
-        {"date": "2026-06-03", "volume": 8100},
-        {"date": "2026-06-04", "volume": 6500},
-        {"date": "2026-06-05", "volume": 5100},
-        {"date": "2026-06-08", "volume": 2800},
-        {"date": "2026-06-09", "volume": 4200},
-        {"date": "2026-06-10", "volume": 2200},
-        {"date": "2026-06-11", "volume": 7800},
-        {"date": "2026-06-12", "volume": 7200}
+        {"date": "2026-06-16", "volume": 750}
       ]
     },
     {
-      "topic": "Preparación debut vs Argelia",
+      "topic": "Sudamérica sin victorias WC",
       "series": [
-        {"date": "2026-06-10", "volume": 3800},
-        {"date": "2026-06-11", "volume": 4500},
-        {"date": "2026-06-12", "volume": 3100}
+        {"date": "2026-06-16", "volume": 1600}
       ]
     },
     {
-      "topic": "Senesi convocado al Mundial",
+      "topic": "Paralelo histórico Paraguay 1954",
       "series": [
-        {"date": "2026-06-12", "volume": 4200}
+        {"date": "2026-06-16", "volume": 400}
       ]
     },
     {
-      "topic": "Declaraciones Scaloni/Messi",
+      "topic": "Garra guaraní y apoyo Albirroja",
       "series": [
-        {"date": "2026-06-09", "volume": 2100},
-        {"date": "2026-06-10", "volume": 1500},
-        {"date": "2026-06-11", "volume": 2900},
-        {"date": "2026-06-12", "volume": 1800}
+        {"date": "2026-06-16", "volume": 500}
       ]
     }
   ]
