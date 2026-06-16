@@ -1,59 +1,45 @@
 {
   "topics": [
     {
-      "tema": "Senesi convocado al Mundial",
-      "engagement": 12500,
-      "views": 850000,
-      "volumen": 4200,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Preparación debut vs Argelia",
-      "engagement": 7800,
-      "views": 520000,
-      "volumen": 3100,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Arranca el Mundial 2026",
-      "engagement": 28500,
-      "views": 2100000,
-      "volumen": 11500,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Julián Álvarez listo para debut",
-      "engagement": 5200,
-      "views": 380000,
-      "volumen": 1950,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Hype hinchas y expectativa WC",
-      "engagement": 9500,
-      "views": 720000,
-      "volumen": 4800,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Último Mundial de Messi",
-      "engagement": 4800,
-      "views": 390000,
-      "volumen": 2300,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Hinchas argentinos en Miami",
-      "engagement": 4100,
-      "views": 310000,
-      "volumen": 1700,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Dibu Martínez entrena normal",
-      "engagement": 3500,
-      "views": 260000,
+      "tema": "Derrota Paraguay 4-1 vs USA debut",
+      "engagement": 983,
+      "views": 65101,
       "volumen": 1400,
+      "sentiment": "Negative"
+    },
+    {
+      "tema": "Críticas Chilavert a Albirroja y Alfaro",
+      "engagement": 1000,
+      "views": 65000,
+      "volumen": 1100,
+      "sentiment": "Negative"
+    },
+    {
+      "tema": "Reacciones hinchas paraguayos",
+      "engagement": 535,
+      "views": 15530,
+      "volumen": 750,
+      "sentiment": "Neutral"
+    },
+    {
+      "tema": "Paralelo histórico Paraguay 1954",
+      "engagement": 206,
+      "views": 5540,
+      "volumen": 400,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Sudamérica sin victorias WC 2026",
+      "engagement": 2080,
+      "views": 20216,
+      "volumen": 1600,
+      "sentiment": "Negative"
+    },
+    {
+      "tema": "Garra guaraní y esperanza Albirroja",
+      "engagement": 340,
+      "views": 3000,
+      "volumen": 500,
       "sentiment": "Positive"
     }
   ]
