@@ -1,45 +1,52 @@
 {
   "topics": [
     {
-      "tema": "Derrota Paraguay 4-1 vs USA debut",
-      "engagement": 983,
-      "views": 65101,
-      "volumen": 1400,
-      "sentiment": "Negative"
-    },
-    {
-      "tema": "Críticas Chilavert a Albirroja y Alfaro",
-      "engagement": 1000,
-      "views": 65000,
-      "volumen": 1100,
-      "sentiment": "Negative"
-    },
-    {
-      "tema": "Reacciones hinchas paraguayos",
-      "engagement": 535,
-      "views": 15530,
-      "volumen": 750,
-      "sentiment": "Neutral"
-    },
-    {
-      "tema": "Paralelo histórico Paraguay 1954",
-      "engagement": 206,
-      "views": 5540,
-      "volumen": 400,
+      "tema": "Previa Paraguay vs Turquía",
+      "engagement": 3500,
+      "views": 150000,
+      "volumen": 600,
       "sentiment": "Positive"
     },
     {
-      "tema": "Sudamérica sin victorias WC 2026",
-      "engagement": 2080,
-      "views": 20216,
-      "volumen": 1600,
+      "tema": "Declaraciones Isidro Pitta",
+      "engagement": 2000,
+      "views": 80000,
+      "volumen": 350,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Alineación confirmada vs Turquía",
+      "engagement": 2200,
+      "views": 85000,
+      "volumen": 450,
+      "sentiment": "Neutral"
+    },
+    {
+      "tema": "Derrota Paraguay 1-4 vs EE.UU.",
+      "engagement": 1200,
+      "views": 60000,
+      "volumen": 500,
       "sentiment": "Negative"
     },
     {
-      "tema": "Garra guaraní y esperanza Albirroja",
-      "engagement": 340,
-      "views": 3000,
-      "volumen": 500,
+      "tema": "Resultados CONMEBOL en el Mundial",
+      "engagement": 1800,
+      "views": 110000,
+      "volumen": 450,
+      "sentiment": "Mixed"
+    },
+    {
+      "tema": "Apoyo hinchas Albirroja",
+      "engagement": 800,
+      "views": 35000,
+      "volumen": 250,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Novia del Mundial Naiel Aguilera",
+      "engagement": 900,
+      "views": 55000,
+      "volumen": 320,
       "sentiment": "Positive"
     }
   ]
