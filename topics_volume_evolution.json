@@ -1,41 +1,41 @@
 {
   "topics": [
     {
-      "topic": "Arranca el Mundial 2026",
+      "topic": "Previa vs Turquía",
       "series": [
-        {"date": "2026-06-11", "volume": 12500},
-        {"date": "2026-06-12", "volume": 11500},
-        {"date": "2026-06-16", "volume": 8500}
+        {"date": "2026-06-18", "volume": 600}
       ]
     },
     {
-      "topic": "Derrota Paraguay 4-1 vs USA",
+      "topic": "Pitta declaraciones",
       "series": [
-        {"date": "2026-06-16", "volume": 1400}
+        {"date": "2026-06-18", "volume": 350}
       ]
     },
     {
-      "topic": "Reacciones hinchas Albirroja",
+      "topic": "Alineación vs Turquía",
       "series": [
-        {"date": "2026-06-16", "volume": 750}
+        {"date": "2026-06-18", "volume": 450}
       ]
     },
     {
-      "topic": "Sudamérica sin victorias WC",
+      "topic": "Derrota Paraguay vs USA",
       "series": [
-        {"date": "2026-06-16", "volume": 1600}
+        {"date": "2026-06-16", "volume": 1400},
+        {"date": "2026-06-18", "volume": 500}
       ]
     },
     {
-      "topic": "Paralelo histórico Paraguay 1954",
+      "topic": "Novia del Mundial Naiel",
       "series": [
-        {"date": "2026-06-16", "volume": 400}
+        {"date": "2026-06-18", "volume": 320}
       ]
     },
     {
-      "topic": "Garra guaraní y apoyo Albirroja",
+      "topic": "Resultados CONMEBOL",
       "series": [
-        {"date": "2026-06-16", "volume": 500}
+        {"date": "2026-06-16", "volume": 1600},
+        {"date": "2026-06-18", "volume": 450}
       ]
     }
   ]
