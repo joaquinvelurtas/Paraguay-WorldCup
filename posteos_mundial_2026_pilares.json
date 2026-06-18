@@ -2,66 +2,72 @@
   "pilares": {
     "Humor": [
       {
-        "titulo_corto": "Tim Payne viral",
-        "resumen": "El caso Tim Payne conecta Mundial, viralidad y Olimpia. La conversación cruza redes, humor futbolero y apropiación paraguaya del fenómeno.",
-        "medio": "vssports",
-        "url": "https://www.vssports.com.py/versus/2026/06/16/el-neozelandes-mas-viral-es-de-olimpia"
+        "titulo_corto": "Tanguita tricolor viral",
+        "resumen": "Una tanguita tricolor aparece como cábala viral para Paraguay y mezcla humor, superstición e identidad albirroja.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/viral/la-cabala-esta-abajo-lanzan-tanguita-tricolor-para-el-proximo-partido"
+      },
+      {
+        "titulo_corto": "Albirrojos en TikTok",
+        "resumen": "Jugadores paraguayos con fuerte presencia en TikTok activan conversación liviana, fandom y cercanía digital.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/fama/los-5-jugadores-albirrojos-que-la-rompen-en-tiktok"
       }
     ],
     "Equipo": [
       {
-        "titulo_corto": "Plan antiturco",
-        "resumen": "La Albirroja prepara cambios ante Turquía tras el debut. La nota concentra presión, reacción táctica y expectativa sobre Alfaro.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/06/16/ambiente-serio-y-ya-se-arma-el-plan-antiturco"
+        "titulo_corto": "Hora de Turquía-Paraguay",
+        "resumen": "Guía de horario y transmisión para Turquía-Paraguay, partido clave para seguir a la Albirroja en el Mundial.",
+        "medio": "abc",
+        "url": "https://www.abc.com.py/deportes/futbol/mundial-de-futbol/2026/06/18/cuando-y-a-que-hora-juega-turquia-vs-paraguay-y-donde-seguir-en-vivo"
       },
       {
-        "titulo_corto": "Albirroja levanta cabeza",
-        "resumen": "Paraguay encara el duelo ante Turquía como una final. La cobertura instala recuperación, urgencia competitiva y clima emocional albirrojo.",
+        "titulo_corto": "Galarza y Pitta asoman",
+        "resumen": "Previo al duelo con Turquía, Galarza y Pitta ganan terreno como posibles variantes en el once paraguayo.",
         "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/2026/06/16/la-albirroja-levanta-cabeza-y-se-prepara-como-para-una-gran-final"
+        "url": "https://www.latribuna.com.py/deportes/2026/06/18/galarza-y-pitta-ganan-terreno-en-el-once-inicial-para-jugar-ante-turquia"
       }
     ],
     "Controversia": [
       {
-        "titulo_corto": "Defienden a parejas",
-        "resumen": "Gloria Vera y Norma Benítez defienden a parejas de jugadores. La conversación traslada críticas del rendimiento al entorno familiar.",
+        "titulo_corto": "IA ante Paraguay",
+        "resumen": "El uso de IA por Estados Unidos ante Paraguay instala debate sobre tecnología, ventaja competitiva y Mundial.",
         "medio": "extra",
-        "url": "https://www.extra.com.py/fama/gloria-vera-y-norma-benitez-defienden-a-primeras-damas-de-la-albirroja-ellas-no-juegan"
+        "url": "https://www.extra.com.py/actualidad/estado-unidos-uso-ia-para-el-partido-contra-paraguay-rae"
       },
       {
-        "titulo_corto": "Eco del 4 a 1",
-        "resumen": "La derrota de Paraguay abre hipótesis y cuestionamientos. La nota refleja ruido público, lectura crítica y debate por el debut.",
-        "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/2026/06/16/el-eco-del-4-a-1-las-hipotesis-que-no-callan-sobre-una-rara-paraguay"
+        "titulo_corto": "Defienden a parejas",
+        "resumen": "Defienden a las parejas de jugadores paraguayos ante críticas y abren debate sobre presión social y culpa.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/fama/gloria-vera-y-norma-benitez-defienden-a-primeras-damas-de-la-albirroja-ellas-no-juegan"
       }
     ],
     "Color en la tribuna": [
       {
-        "titulo_corto": "Pasión en San José",
-        "resumen": "Hinchas paraguayos copan San José en la previa mundialista. La nota muestra comunidad, viaje y color albirrojo fuera del país.",
-        "medio": "d10",
-        "url": "https://d10.ultimahora.com/la-pasion-invade-san-jose"
+        "titulo_corto": "Renato en casa rodante",
+        "resumen": "Renato Prono sigue a la Albirroja en casa rodante por Estados Unidos y aporta color viajero al Mundial.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/fama/renato-prono-sigue-a-la-albirroja-en-una-casa-rodante-por-estados-unidos"
       },
       {
-        "titulo_corto": "Mundial premium",
-        "resumen": "El Mundial 2026 encarece la experiencia de ir a la cancha. La nota conecta hinchada, consumo y barreras de acceso para fans.",
+        "titulo_corto": "Bares con ilusión albirroja",
+        "resumen": "La ilusión por Paraguay movió bares y consumo, aunque el resultado enfrió el ánimo de hinchas y comercios.",
         "medio": "infonegocios",
-        "url": "https://infonegocios.com.py/infomundial/del-futbol-popular-al-espectaculo-premium-como-el-mundial-2026-encarecio-la-experiencia-de-ir-a-la-cancha"
+        "url": "https://infonegocios.com.py/y-ademas/la-ilusion-mundialista-impulso-el-movimiento-comercial-en-bares-aunque-el-resultado-apago-el-entusiasmo"
       }
     ],
     "Paraguay por el mundo": [
       {
-        "titulo_corto": "Arbitraje paraguayo",
-        "resumen": "Jueces paraguayos debutan en el Mundial 2026. La noticia proyecta representación nacional más allá de la Selección.",
-        "medio": "vssports",
-        "url": "https://www.vssports.com.py/versus/2026/06/17/alemania-vs-costa-de-marfil-con-arbitraje-paraguayo"
+        "titulo_corto": "Carta en Israel",
+        "resumen": "Un embajador paraguayo en Israel pidió fuerza para la Albirroja, conectando Mundial, fe y presencia exterior.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/actualidad/embajador-en-israel-dejo-una-carta-a-dios-y-pidio-fuerza-para-la-albirroja"
       },
       {
-        "titulo_corto": "Leyendas paraguayas",
-        "resumen": "La nota revisa qué hacen hoy figuras paraguayas de Sudáfrica 2010. Activa memoria mundialista y orgullo deportivo nacional.",
-        "medio": "infonegocios",
-        "url": "https://infonegocios.com.py/infomundial/de-sudafrica-2010-a-nuevos-desafios-que-hacen-hoy-las-leyendas-del-futbol-paraguayo"
+        "titulo_corto": "Árbitros paraguayos debutan",
+        "resumen": "El arbitraje paraguayo debuta en el Mundial 2026 y proyecta presencia nacional más allá del equipo.",
+        "medio": "vssports",
+        "url": "https://www.vssports.com.py/versus/2026/06/17/alemania-vs-costa-de-marfil-con-arbitraje-paraguayo"
       }
     ],
     "Alcohol": []
