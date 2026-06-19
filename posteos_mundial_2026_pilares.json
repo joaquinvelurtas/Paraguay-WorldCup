@@ -2,72 +2,60 @@
   "pilares": {
     "Humor": [
       {
-        "titulo_corto": "Pastor tiktokero viral",
-        "resumen": "Un pastor tiktokero dice que Paraguay no está preparado para ganar la Copa y activa humor, fe y superstición albirroja.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/viral/pastor-tiktokero-dice-que-paraguay-no-esta-preparado-para-ganar-la-copa"
-      },
-      {
         "titulo_corto": "Albirrojos en TikTok",
-        "resumen": "Jugadores paraguayos con fuerte presencia en TikTok activan conversación liviana, fandom y cercanía digital.",
+        "resumen": "Jugadores de la Albirroja destacan en TikTok y llevan la conversación mundialista paraguaya al terreno viral y cotidiano.",
         "medio": "extra",
         "url": "https://www.extra.com.py/fama/los-5-jugadores-albirrojos-que-la-rompen-en-tiktok"
       }
     ],
     "Equipo": [
       {
-        "titulo_corto": "Hora de Turquía-Paraguay",
-        "resumen": "Guía de horario y transmisión para Turquía-Paraguay, partido clave para seguir a la Albirroja en el Mundial.",
-        "medio": "abc",
-        "url": "https://www.abc.com.py/deportes/futbol/mundial-de-futbol/2026/06/18/cuando-y-a-que-hora-juega-turquia-vs-paraguay-y-donde-seguir-en-vivo"
+        "titulo_corto": "Salir a atropellar",
+        "resumen": "La previa exige una reacción fuerte de Paraguay ante Turquía, con tono urgente y foco en recuperar carácter competitivo.",
+        "medio": "cronica",
+        "url": "https://www.cronica.com.py/2026/06/18/este-partido-tenemos-que-salir-a-atropellar"
       },
       {
-        "titulo_corto": "Galarza y Pitta asoman",
-        "resumen": "Previo al duelo con Turquía, Galarza y Pitta ganan terreno como posibles variantes en el once paraguayo.",
-        "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/2026/06/18/galarza-y-pitta-ganan-terreno-en-el-once-inicial-para-jugar-ante-turquia"
+        "titulo_corto": "Creer hasta el final",
+        "resumen": "La nota instala fe y resistencia como claves para que Paraguay siga vivo en el Mundial tras un inicio adverso.",
+        "medio": "d10",
+        "url": "https://d10.ultimahora.com/creer-hasta-el-final"
       }
     ],
     "Controversia": [
       {
-        "titulo_corto": "IA ante Paraguay",
-        "resumen": "El uso de IA por Estados Unidos ante Paraguay instala debate sobre tecnología, ventaja competitiva y Mundial.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/estado-unidos-uso-ia-para-el-partido-contra-paraguay-rae"
+        "titulo_corto": "IA contra Paraguay",
+        "resumen": "La nota plantea que Estados Unidos usó inteligencia artificial como ventaja ante Paraguay, abriendo debate tecnológico.",
+        "medio": "cronica",
+        "url": "https://www.cronica.com.py/2026/06/18/la-ia-fue-el-jugador-yanqui-numero-12-ante-paraguay"
       },
       {
-        "titulo_corto": "Defienden a parejas",
-        "resumen": "Defienden a las parejas de jugadores paraguayos ante críticas y abren debate sobre presión social y culpa.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/fama/gloria-vera-y-norma-benitez-defienden-a-primeras-damas-de-la-albirroja-ellas-no-juegan"
+        "titulo_corto": "Galarza responde rumores",
+        "resumen": "Galarza rechaza versiones sobre un supuesto bajón y convierte su estado anímico en tema de presión mediática.",
+        "medio": "vssports",
+        "url": "https://www.vssports.com.py/versus/2026/06/19/barbaridad-la-respuesta-de-galarza-a-los-rumores-de-su-bajon"
       }
     ],
     "Color en la tribuna": [
       {
-        "titulo_corto": "Renato en casa rodante",
-        "resumen": "Renato Prono sigue a la Albirroja en casa rodante por Estados Unidos y aporta color viajero al Mundial.",
+        "titulo_corto": "Compatriotas en la previa",
+        "resumen": "Hinchas paraguayos acompañan la previa del segundo partido de la Albirroja y sostienen el clima de apoyo mundialista.",
         "medio": "extra",
-        "url": "https://www.extra.com.py/fama/renato-prono-sigue-a-la-albirroja-en-una-casa-rodante-por-estados-unidos"
-      },
-      {
-        "titulo_corto": "Bares con ilusión albirroja",
-        "resumen": "La ilusión por Paraguay movió bares y consumo, aunque el resultado enfrió el ánimo de hinchas y comercios.",
-        "medio": "infonegocios",
-        "url": "https://infonegocios.com.py/y-ademas/la-ilusion-mundialista-impulso-el-movimiento-comercial-en-bares-aunque-el-resultado-apago-el-entusiasmo"
+        "url": "https://www.extra.com.py/actualidad/apoyo-sobra-compatriotas-viven-la-previa-del-segundo-partido-de-la-albirroja"
       }
     ],
     "Paraguay por el mundo": [
       {
-        "titulo_corto": "Carta en Israel",
-        "resumen": "Un embajador paraguayo en Israel pidió fuerza para la Albirroja, conectando Mundial, fe y presencia exterior.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/embajador-en-israel-dejo-una-carta-a-dios-y-pidio-fuerza-para-la-albirroja"
+        "titulo_corto": "Economía albirroja",
+        "resumen": "El fenómeno Albirroja impulsa ventas y activa marcas paraguayas, mostrando cómo el Mundial también mueve consumo local.",
+        "medio": "infonegocios",
+        "url": "https://infonegocios.com.py/y-ademas/la-economia-tambien-juega-el-fenomeno-albirroja-multiplica-ventas-y-revitaliza-marcas-paraguayas"
       },
       {
-        "titulo_corto": "Árbitros paraguayos debutan",
-        "resumen": "El arbitraje paraguayo debuta en el Mundial 2026 y proyecta presencia nacional más allá del equipo.",
-        "medio": "vssports",
-        "url": "https://www.vssports.com.py/versus/2026/06/17/alemania-vs-costa-de-marfil-con-arbitraje-paraguayo"
+        "titulo_corto": "Paraguay y Turquía negocian",
+        "resumen": "El cruce mundialista sirve de marco para destacar vínculos comerciales entre Paraguay y Turquía en agroindustria, carne y maquila.",
+        "medio": "infonegocios",
+        "url": "https://infonegocios.com.py/nota-principal/del-mundial-a-los-negocios-paraguay-y-turquia-fortalecen-lazos-comerciales-con-foco-en-agroindustria-carne-y-maquila"
       }
     ],
     "Alcohol": []
