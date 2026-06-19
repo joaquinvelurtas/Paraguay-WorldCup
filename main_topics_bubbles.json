@@ -1,53 +1,46 @@
 {
   "topics": [
     {
-      "tema": "Previa Paraguay vs Turquía",
-      "engagement": 3500,
-      "views": 150000,
+      "tema": "Alineación confirmada vs Turquía",
+      "engagement": 1894,
+      "views": 73656,
+      "volumen": 550,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Declaraciones Alfaro previa Turquía",
+      "engagement": 860,
+      "views": 175598,
+      "volumen": 420,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Albirroja En 24 horas juega",
+      "engagement": 1457,
+      "views": 33536,
       "volumen": 600,
       "sentiment": "Positive"
     },
     {
-      "tema": "Declaraciones Isidro Pitta",
-      "engagement": 2000,
-      "views": 80000,
-      "volumen": 350,
+      "tema": "Apoyo hinchada Albirroja EE.UU.",
+      "engagement": 350,
+      "views": 15000,
+      "volumen": 380,
       "sentiment": "Positive"
     },
     {
-      "tema": "Alineación confirmada vs Turquía",
-      "engagement": 2200,
-      "views": 85000,
+      "tema": "Confianza post derrota vs USA",
+      "engagement": 1300,
+      "views": 35000,
       "volumen": 450,
       "sentiment": "Neutral"
     },
     {
-      "tema": "Derrota Paraguay 1-4 vs EE.UU.",
-      "engagement": 1200,
-      "views": 60000,
-      "volumen": 500,
-      "sentiment": "Negative"
-    },
-    {
-      "tema": "Resultados CONMEBOL en el Mundial",
-      "engagement": 1800,
-      "views": 110000,
-      "volumen": 450,
-      "sentiment": "Mixed"
-    },
-    {
-      "tema": "Apoyo hinchas Albirroja",
-      "engagement": 800,
-      "views": 35000,
-      "volumen": 250,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Novia del Mundial Naiel Aguilera",
-      "engagement": 900,
-      "views": 55000,
-      "volumen": 320,
-      "sentiment": "Positive"
+      "tema": "Resultados CONMEBOL Mundial",
+      "engagement": 505,
+      "views": 14300,
+      "volumen": 380,
+      "sentiment": "Neutral"
     }
   ]
 }
