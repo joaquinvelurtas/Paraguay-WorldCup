@@ -2,60 +2,66 @@
   "pilares": {
     "Humor": [
       {
-        "titulo_corto": "Albirrojos en TikTok",
-        "resumen": "Jugadores de la Albirroja destacan en TikTok y llevan la conversación mundialista paraguaya al terreno viral y cotidiano.",
+        "titulo_corto": "Vidente libera a la Albirroja",
+        "resumen": "Una vidente afirma haber quitado un payé a Paraguay, sumando superstición y humor popular a la previa mundialista.",
         "medio": "extra",
-        "url": "https://www.extra.com.py/fama/los-5-jugadores-albirrojos-que-la-rompen-en-tiktok"
+        "url": "https://www.extra.com.py/fama/vidente-dice-que-libero-a-la-albirroja-de-feroz-paye"
+      },
+      {
+        "titulo_corto": "Mariachis gritan el gol",
+        "resumen": "Mariachis celebran un gol paraguayo en plena serenata y convierten el festejo de la Albirroja en una escena viral.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/actualidad/mariachis-gritaron-el-gol-en-plena-serenata"
       }
     ],
     "Equipo": [
       {
-        "titulo_corto": "Salir a atropellar",
-        "resumen": "La previa exige una reacción fuerte de Paraguay ante Turquía, con tono urgente y foco en recuperar carácter competitivo.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/06/18/este-partido-tenemos-que-salir-a-atropellar"
+        "titulo_corto": "Alfaro alerta por la tecnología",
+        "resumen": "Gustavo Alfaro cuestiona el exceso tecnológico y advierte que no quiere jugadores convertidos en PlayStation.",
+        "medio": "abc",
+        "url": "https://www.abc.com.py/deportes/futbol/seleccion-paraguaya/2026/06/21/gustavo-alfaro-tengo-miedo-que-terminemos-transformandonos-en-jugadores-de-playstation"
       },
       {
-        "titulo_corto": "Creer hasta el final",
-        "resumen": "La nota instala fe y resistencia como claves para que Paraguay siga vivo en el Mundial tras un inicio adverso.",
-        "medio": "d10",
-        "url": "https://d10.ultimahora.com/creer-hasta-el-final"
+        "titulo_corto": "Galarza sostiene el ánimo",
+        "resumen": "La nota destaca a Galarza como figura anímica y deportiva para Paraguay en la conversación mundialista.",
+        "medio": "latribuna",
+        "url": "https://www.latribuna.com.py/deportes/2026/06/22/el-mantra-del-goleador"
       }
     ],
     "Controversia": [
       {
-        "titulo_corto": "IA contra Paraguay",
-        "resumen": "La nota plantea que Estados Unidos usó inteligencia artificial como ventaja ante Paraguay, abriendo debate tecnológico.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/06/18/la-ia-fue-el-jugador-yanqui-numero-12-ante-paraguay"
+        "titulo_corto": "Árbitro como judas kái",
+        "resumen": "El árbitro que expulsó a Almirón aparece como judas kái en fiestas de San Juan, mostrando enojo popular paraguayo.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/fama/arbitro-que-echo-a-miguel-almiron-ya-es-judas-kai-en-varias-fiestas-de-san-juan"
       },
       {
-        "titulo_corto": "Galarza responde rumores",
-        "resumen": "Galarza rechaza versiones sobre un supuesto bajón y convierte su estado anímico en tema de presión mediática.",
-        "medio": "vssports",
-        "url": "https://www.vssports.com.py/versus/2026/06/19/barbaridad-la-respuesta-de-galarza-a-los-rumores-de-su-bajon"
+        "titulo_corto": "Mundial y violencia familiar",
+        "resumen": "La nota vincula el Mundial con un aumento de casos de violencia familiar, llevando la conversación a un plano social crítico.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/actualidad/el-mundial-dispara-los-casos-de-violencia-familiar"
       }
     ],
     "Color en la tribuna": [
       {
-        "titulo_corto": "Compatriotas en la previa",
-        "resumen": "Hinchas paraguayos acompañan la previa del segundo partido de la Albirroja y sostienen el clima de apoyo mundialista.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/apoyo-sobra-compatriotas-viven-la-previa-del-segundo-partido-de-la-albirroja"
+        "titulo_corto": "Abrazo albirrojo pendiente",
+        "resumen": "La nota expresa el afecto de miles de paraguayos hacia protagonistas de la Selección durante el Mundial.",
+        "medio": "cronica",
+        "url": "https://www.cronica.com.py/2026/06/22/el-abrazo-que-miles-de-paraguayos-te-quieren-dar"
+      },
+      {
+        "titulo_corto": "Muralla albirroja en EE.UU.",
+        "resumen": "Hinchas paraguayos copan Estados Unidos y transforman el apoyo a la Albirroja en una postal mundialista.",
+        "medio": "latribuna",
+        "url": "https://www.latribuna.com.py/deportes/2026/06/22/una-muralla-albirroja-en-eeuu"
       }
     ],
     "Paraguay por el mundo": [
       {
-        "titulo_corto": "Economía albirroja",
-        "resumen": "El fenómeno Albirroja impulsa ventas y activa marcas paraguayas, mostrando cómo el Mundial también mueve consumo local.",
-        "medio": "infonegocios",
-        "url": "https://infonegocios.com.py/y-ademas/la-economia-tambien-juega-el-fenomeno-albirroja-multiplica-ventas-y-revitaliza-marcas-paraguayas"
-      },
-      {
-        "titulo_corto": "Paraguay y Turquía negocian",
-        "resumen": "El cruce mundialista sirve de marco para destacar vínculos comerciales entre Paraguay y Turquía en agroindustria, carne y maquila.",
-        "medio": "infonegocios",
-        "url": "https://infonegocios.com.py/nota-principal/del-mundial-a-los-negocios-paraguay-y-turquia-fortalecen-lazos-comerciales-con-foco-en-agroindustria-carne-y-maquila"
+        "titulo_corto": "Apoyo íntimo a Galarza",
+        "resumen": "La pareja de Galarza publica un mensaje de apoyo tras la exposición del jugador paraguayo en el Mundial.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/fama/novia-a-galarza-jamas-permitiste-que-las-voces-de-afuera-fueran-mas-fuertes"
       }
     ],
     "Alcohol": []
