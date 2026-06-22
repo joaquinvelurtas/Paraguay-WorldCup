@@ -1,46 +1,50 @@
 {
   "topics": [
     {
-      "topic": "Previa vs Turquía",
+      "topic": "Galarza reloj viral",
       "series": [
-        {"date": "2026-06-18", "volume": 600},
-        {"date": "2026-06-19", "volume": 550}
+        {"date": "2026-06-20", "volume": 1200},
+        {"date": "2026-06-21", "volume": 800},
+        {"date": "2026-06-22", "volume": 450}
       ]
     },
     {
-      "topic": "Pitta declaraciones",
+      "topic": "Alfaro declaraciones",
       "series": [
-        {"date": "2026-06-18", "volume": 350},
-        {"date": "2026-06-19", "volume": 200}
+        {"date": "2026-06-21", "volume": 280},
+        {"date": "2026-06-22", "volume": 220}
       ]
     },
     {
-      "topic": "Alineación vs Turquía",
+      "topic": "Victoria vs Turquía",
       "series": [
-        {"date": "2026-06-18", "volume": 450},
-        {"date": "2026-06-19", "volume": 480}
-      ]
-    },
-    {
-      "topic": "Derrota Paraguay vs USA",
-      "series": [
-        {"date": "2026-06-16", "volume": 1400},
-        {"date": "2026-06-18", "volume": 500},
-        {"date": "2026-06-19", "volume": 250}
+        {"date": "2026-06-20", "volume": 900},
+        {"date": "2026-06-21", "volume": 550},
+        {"date": "2026-06-22", "volume": 350}
       ]
     },
     {
       "topic": "Apoyo hinchas Albirroja",
       "series": [
-        {"date": "2026-06-19", "volume": 380}
+        {"date": "2026-06-19", "volume": 380},
+        {"date": "2026-06-21", "volume": 300},
+        {"date": "2026-06-22", "volume": 250}
       ]
     },
     {
-      "topic": "Resultados CONMEBOL",
+      "topic": "Prep vs Australia",
+      "series": [
+        {"date": "2026-06-21", "volume": 320},
+        {"date": "2026-06-22", "volume": 280}
+      ]
+    },
+    {
+      "topic": "Resultados CONMEBOL / Grupo D",
       "series": [
         {"date": "2026-06-16", "volume": 1600},
         {"date": "2026-06-18", "volume": 450},
-        {"date": "2026-06-19", "volume": 380}
+        {"date": "2026-06-21", "volume": 300},
+        {"date": "2026-06-22", "volume": 220}
       ]
     }
   ]

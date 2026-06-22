@@ -1,46 +1,46 @@
 {
   "topics": [
     {
-      "tema": "Alineación confirmada vs Turquía",
-      "engagement": 1894,
-      "views": 73656,
-      "volumen": 550,
-      "sentiment": "Positive"
+      "tema": "Galarza y el reloj del árbitro",
+      "engagement": 5000,
+      "views": 200000,
+      "volumen": 700,
+      "sentiment": "Neutral"
     },
     {
-      "tema": "Declaraciones Alfaro previa Turquía",
-      "engagement": 860,
-      "views": 175598,
-      "volumen": 420,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Albirroja En 24 horas juega",
-      "engagement": 1457,
-      "views": 33536,
-      "volumen": 600,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Apoyo hinchada Albirroja EE.UU.",
-      "engagement": 350,
+      "tema": "Declaraciones Gustavo Alfaro",
+      "engagement": 400,
       "views": 15000,
-      "volumen": 380,
+      "volumen": 250,
       "sentiment": "Positive"
     },
     {
-      "tema": "Confianza post derrota vs USA",
-      "engagement": 1300,
-      "views": 35000,
-      "volumen": 450,
-      "sentiment": "Neutral"
+      "tema": "Victoria Albirroja vs Turquía",
+      "engagement": 800,
+      "views": 25000,
+      "volumen": 400,
+      "sentiment": "Positive"
     },
     {
-      "tema": "Resultados CONMEBOL Mundial",
-      "engagement": 505,
-      "views": 14300,
-      "volumen": 380,
-      "sentiment": "Neutral"
+      "tema": "Preparación vs Australia",
+      "engagement": 300,
+      "views": 8000,
+      "volumen": 200,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Apoyo hinchas Albirroja",
+      "engagement": 350,
+      "views": 10000,
+      "volumen": 280,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Chances clasificación Grupo D",
+      "engagement": 250,
+      "views": 7000,
+      "volumen": 180,
+      "sentiment": "Positive"
     }
   ]
 }
