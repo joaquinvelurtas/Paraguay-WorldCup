@@ -2,66 +2,54 @@
   "pilares": {
     "Humor": [
       {
-        "titulo_corto": "Vidente libera a la Albirroja",
-        "resumen": "Una vidente afirma haber quitado un payé a Paraguay, sumando superstición y humor popular a la previa mundialista.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/fama/vidente-dice-que-libero-a-la-albirroja-de-feroz-paye"
-      },
-      {
-        "titulo_corto": "Mariachis gritan el gol",
-        "resumen": "Mariachis celebran un gol paraguayo en plena serenata y convierten el festejo de la Albirroja en una escena viral.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/mariachis-gritaron-el-gol-en-plena-serenata"
+        "titulo_corto": "Galarza y el reloj",
+        "resumen": "Galarza fue acusado por hinchas turcos de llevarse el reloj del árbitro, pero la nota aclara que lo devolvió.",
+        "medio": "cronica",
+        "url": "https://www.cronica.com.py/2026/06/22/acusan-a-mati-de-llevarse-reloj-del-arbitro-pero-el-lo-devolvio"
       }
     ],
     "Equipo": [
       {
-        "titulo_corto": "Alfaro alerta por la tecnología",
-        "resumen": "Gustavo Alfaro cuestiona el exceso tecnológico y advierte que no quiere jugadores convertidos en PlayStation.",
+        "titulo_corto": "Paraguay ante Australia",
+        "resumen": "La Albirroja prepara el duelo ante Australia con foco en Alfaro, Almirón, Enciso, Gómez, Bobadilla y otros jugadores clave.",
         "medio": "abc",
-        "url": "https://www.abc.com.py/deportes/futbol/seleccion-paraguaya/2026/06/21/gustavo-alfaro-tengo-miedo-que-terminemos-transformandonos-en-jugadores-de-playstation"
+        "url": "https://www.abc.com.py/deportes/futbol/seleccion-paraguaya/2026/06/22/paraguay-ajusta-detalles-para-la-final-ante-australia"
       },
       {
-        "titulo_corto": "Galarza sostiene el ánimo",
-        "resumen": "La nota destaca a Galarza como figura anímica y deportiva para Paraguay en la conversación mundialista.",
+        "titulo_corto": "Mantra de Galarza",
+        "resumen": "La nota aborda a Galarza en clave de gol, Albirroja e hinchas paraguayos dentro del clima mundialista.",
         "medio": "latribuna",
         "url": "https://www.latribuna.com.py/deportes/2026/06/22/el-mantra-del-goleador"
       }
     ],
     "Controversia": [
       {
-        "titulo_corto": "Árbitro como judas kái",
-        "resumen": "El árbitro que expulsó a Almirón aparece como judas kái en fiestas de San Juan, mostrando enojo popular paraguayo.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/fama/arbitro-que-echo-a-miguel-almiron-ya-es-judas-kai-en-varias-fiestas-de-san-juan"
+        "titulo_corto": "FIFA sanciona a Chipi",
+        "resumen": "FIFA retiró la acreditación del periodista paraguayo Jorge “Chipi” Vera durante el Mundial 2026.",
+        "medio": "d10",
+        "url": "https://d10.ultimahora.com/fifa-revoca-credenciales-de-periodista-paraguayo"
       },
       {
-        "titulo_corto": "Mundial y violencia familiar",
-        "resumen": "La nota vincula el Mundial con un aumento de casos de violencia familiar, llevando la conversación a un plano social crítico.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/el-mundial-dispara-los-casos-de-violencia-familiar"
+        "titulo_corto": "FIFA decide sobre Barton",
+        "resumen": "FIFA toma una decisión sobre el árbitro Iván Barton tras un episodio que generó reacción entre hinchas de la Albirroja.",
+        "medio": "vssports",
+        "url": "https://www.vssports.com.py/versus/2026/06/22/la-decision-que-tomo-la-fifa-con-el-arbitro-ivan-barton"
       }
     ],
     "Color en la tribuna": [
       {
-        "titulo_corto": "Abrazo albirrojo pendiente",
-        "resumen": "La nota expresa el afecto de miles de paraguayos hacia protagonistas de la Selección durante el Mundial.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/06/22/el-abrazo-que-miles-de-paraguayos-te-quieren-dar"
-      },
-      {
         "titulo_corto": "Muralla albirroja en EE.UU.",
-        "resumen": "Hinchas paraguayos copan Estados Unidos y transforman el apoyo a la Albirroja en una postal mundialista.",
+        "resumen": "La nota destaca la presencia de hinchas paraguayos acompañando a la Albirroja en Estados Unidos.",
         "medio": "latribuna",
         "url": "https://www.latribuna.com.py/deportes/2026/06/22/una-muralla-albirroja-en-eeuu"
       }
     ],
     "Paraguay por el mundo": [
       {
-        "titulo_corto": "Apoyo íntimo a Galarza",
-        "resumen": "La pareja de Galarza publica un mensaje de apoyo tras la exposición del jugador paraguayo en el Mundial.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/fama/novia-a-galarza-jamas-permitiste-que-las-voces-de-afuera-fueran-mas-fuertes"
+        "titulo_corto": "Arzamendia en Argentina",
+        "resumen": "Marino Arzamendia aparece como paraguayo con proyección en el fútbol argentino.",
+        "medio": "latribuna",
+        "url": "https://www.latribuna.com.py/deportes/2026/06/22/marino-arzamendia-se-da-revancha-en-el-futbol-argentino"
       }
     ],
     "Alcohol": []
