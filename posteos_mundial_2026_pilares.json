@@ -2,56 +2,56 @@
   "pilares": {
     "Humor": [
       {
-        "titulo_corto": "Galarza y el reloj",
-        "resumen": "Galarza fue acusado por hinchas turcos de llevarse el reloj del árbitro, pero la nota aclara que lo devolvió.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/06/22/acusan-a-mati-de-llevarse-reloj-del-arbitro-pero-el-lo-devolvio"
+        "titulo_corto": "Vidente viraliza Mundial",
+        "resumen": "Una vidente predice que reptilianos se llevarán a Neymar y Vinícius, activando humor absurdo y conversación memeable del Mundial.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/viral/vidente-predice-una-invasion-alienigena-reptilianos-llevaran-a-neymar-y-vinicius-hei"
+      },
+      {
+        "titulo_corto": "Piropo a Maurício",
+        "resumen": "Una fan piropea a Maurício Magalhães y el gesto deriva en celos de pareja, mezclando Albirroja, farándula y humor cotidiano.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/fama/joven-piropeo-a-mauricio-magalhaes-prado-y-su-novio-celoso-la-dejo"
       }
     ],
     "Equipo": [
       {
-        "titulo_corto": "Paraguay ante Australia",
-        "resumen": "La Albirroja prepara el duelo ante Australia con foco en Alfaro, Almirón, Enciso, Gómez, Bobadilla y otros jugadores clave.",
+        "titulo_corto": "Alfaro ajusta la Albirroja",
+        "resumen": "Alfaro prepara cambios para enfrentar a Australia, con foco en la clasificación paraguaya y la baja de Miguel Almirón.",
         "medio": "abc",
-        "url": "https://www.abc.com.py/deportes/futbol/seleccion-paraguaya/2026/06/22/paraguay-ajusta-detalles-para-la-final-ante-australia"
-      },
-      {
-        "titulo_corto": "Mantra de Galarza",
-        "resumen": "La nota aborda a Galarza en clave de gol, Albirroja e hinchas paraguayos dentro del clima mundialista.",
-        "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/2026/06/22/el-mantra-del-goleador"
+        "url": "https://www.abc.com.py/deportes/futbol/seleccion-paraguaya/2026/06/23/alfaro-afina-el-equipo-para-la-final-ante-australia"
       }
     ],
     "Controversia": [
       {
-        "titulo_corto": "FIFA sanciona a Chipi",
-        "resumen": "FIFA retiró la acreditación del periodista paraguayo Jorge “Chipi” Vera durante el Mundial 2026.",
+        "titulo_corto": "Doble vara con Bellingham",
+        "resumen": "La nota cuestiona por qué Bellingham no fue expulsado y compara el caso con la roja aplicada a Miguel Almirón.",
         "medio": "d10",
-        "url": "https://d10.ultimahora.com/fifa-revoca-credenciales-de-periodista-paraguayo"
+        "url": "https://d10.ultimahora.com/y-la-roja-para-bellingham"
       },
       {
-        "titulo_corto": "FIFA decide sobre Barton",
-        "resumen": "FIFA toma una decisión sobre el árbitro Iván Barton tras un episodio que generó reacción entre hinchas de la Albirroja.",
-        "medio": "vssports",
-        "url": "https://www.vssports.com.py/versus/2026/06/22/la-decision-que-tomo-la-fifa-con-el-arbitro-ivan-barton"
+        "titulo_corto": "Periodista expulsado",
+        "resumen": "FIFA expulsa del Mundial a un periodista por exabruptos vinculados al partido de la Albirroja, abriendo debate disciplinario.",
+        "medio": "ole",
+        "url": "https://www.ole.com.ar/mundial/mundial-2026/fifa-jorgevera-expulsion-albirroja_0_w1D8t8KyKl.html"
       }
     ],
     "Color en la tribuna": [
       {
-        "titulo_corto": "Muralla albirroja en EE.UU.",
-        "resumen": "La nota destaca la presencia de hinchas paraguayos acompañando a la Albirroja en Estados Unidos.",
-        "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/2026/06/22/una-muralla-albirroja-en-eeuu"
+        "titulo_corto": "Consumo cuando juega Paraguay",
+        "resumen": "Tiendas de conveniencia y apuestas registran subas cuando juega Paraguay, mostrando cómo el Mundial mueve reuniones y consumo.",
+        "medio": "infonegocios",
+        "url": "https://infonegocios.com.py/infomundial/cuando-juega-paraguay-gana-el-consumo-tiendas-de-conveniencia-y-apuestas-registran-fuertes-aumentos"
       }
     ],
-    "Paraguay por el mundo": [
+    "Paraguay por el mundo": [],
+    "Alcohol": [
       {
-        "titulo_corto": "Arzamendia en Argentina",
-        "resumen": "Marino Arzamendia aparece como paraguayo con proyección en el fútbol argentino.",
-        "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/2026/06/22/marino-arzamendia-se-da-revancha-en-el-futbol-argentino"
+        "titulo_corto": "Cervezas paraguayas ganan",
+        "resumen": "Cervezas paraguayas crecen frente a importadas premium y el vino gana espacio en reuniones mundialistas locales.",
+        "medio": "infonegocios",
+        "url": "https://infonegocios.com.py/infomundial/cervezas-paraguayas-ganan-frente-a-las-premium-importadas-y-el-vino-vive-su-mejor-momento-en-las-reuniones-mundialistas"
       }
-    ],
-    "Alcohol": []
+    ]
   }
 }
