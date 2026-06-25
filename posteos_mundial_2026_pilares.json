@@ -2,56 +2,56 @@
   "pilares": {
     "Humor": [
       {
-        "titulo_corto": "Vidente viraliza Mundial",
-        "resumen": "Una vidente predice que reptilianos se llevarán a Neymar y Vinícius, activando humor absurdo y conversación memeable del Mundial.",
+        "titulo_corto": "Santos por la Albirroja",
+        "resumen": "Extra mezcla fe popular y humor para pedir por Paraguay antes del duelo decisivo ante Australia.",
         "medio": "extra",
-        "url": "https://www.extra.com.py/viral/vidente-predice-una-invasion-alienigena-reptilianos-llevaran-a-neymar-y-vinicius-hei"
-      },
-      {
-        "titulo_corto": "Piropo a Maurício",
-        "resumen": "Una fan piropea a Maurício Magalhães y el gesto deriva en celos de pareja, mezclando Albirroja, farándula y humor cotidiano.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/fama/joven-piropeo-a-mauricio-magalhaes-prado-y-su-novio-celoso-la-dejo"
+        "url": "https://www.extra.com.py/actualidad/5-santos-titulares-para-pedir-por-la-albirroja"
       }
     ],
     "Equipo": [
       {
-        "titulo_corto": "Alfaro ajusta la Albirroja",
-        "resumen": "Alfaro prepara cambios para enfrentar a Australia, con foco en la clasificación paraguaya y la baja de Miguel Almirón.",
+        "titulo_corto": "Alfaro lo vive como final",
+        "resumen": "Alfaro pide afrontar Australia como si fuera el último partido, reforzando tensión y foco competitivo de la Albirroja.",
         "medio": "abc",
-        "url": "https://www.abc.com.py/deportes/futbol/seleccion-paraguaya/2026/06/23/alfaro-afina-el-equipo-para-la-final-ante-australia"
+        "url": "https://www.abc.com.py/deportes/futbol/seleccion-paraguaya/2026/06/24/en-vivo-desde-el-levis-stadium-habla-gustavo-alfaro-en-la-previa-ante-australia"
+      },
+      {
+        "titulo_corto": "Australia teme a Paraguay",
+        "resumen": "El DT australiano define a la Albirroja como caos organizado y anticipa un cruce intenso ante Paraguay.",
+        "medio": "vssports",
+        "url": "https://www.vssports.com.py/versus/2026/06/24/dt-de-australia-teme-al-caos-organizado-de-la-albirroja"
       }
     ],
     "Controversia": [
       {
-        "titulo_corto": "Doble vara con Bellingham",
-        "resumen": "La nota cuestiona por qué Bellingham no fue expulsado y compara el caso con la roja aplicada a Miguel Almirón.",
-        "medio": "d10",
-        "url": "https://d10.ultimahora.com/y-la-roja-para-bellingham"
+        "titulo_corto": "Doble vara con Almirón",
+        "resumen": "Crónica compara el trato a Almirón con el caso Bellingham y activa debate sobre criterios disciplinarios en el Mundial.",
+        "medio": "cronica",
+        "url": "https://www.cronica.com.py/2026/06/24/con-almiron-si-pero-con-bellingham-no"
       },
       {
-        "titulo_corto": "Periodista expulsado",
-        "resumen": "FIFA expulsa del Mundial a un periodista por exabruptos vinculados al partido de la Albirroja, abriendo debate disciplinario.",
-        "medio": "ole",
-        "url": "https://www.ole.com.ar/mundial/mundial-2026/fifa-jorgevera-expulsion-albirroja_0_w1D8t8KyKl.html"
+        "titulo_corto": "Cambio en penales FIFA",
+        "resumen": "InfoNegocios aborda un posible cambio de FIFA en los penales, una regla que puede impactar partidos decisivos del Mundial.",
+        "medio": "infonegocios",
+        "url": "https://infonegocios.com.py/infomundial/revolucion-en-los-penales-la-fifa-impulsa-un-cambio-inedito-en-pleno-mundial-2026"
       }
     ],
     "Color en la tribuna": [
       {
-        "titulo_corto": "Consumo cuando juega Paraguay",
-        "resumen": "Tiendas de conveniencia y apuestas registran subas cuando juega Paraguay, mostrando cómo el Mundial mueve reuniones y consumo.",
-        "medio": "infonegocios",
-        "url": "https://infonegocios.com.py/infomundial/cuando-juega-paraguay-gana-el-consumo-tiendas-de-conveniencia-y-apuestas-registran-fuertes-aumentos"
+        "titulo_corto": "Ansiedad albirroja global",
+        "resumen": "La Tribuna retrata la pasión paraguaya a 12.000 km, mostrando cómo la distancia también organiza emoción mundialista.",
+        "medio": "latribuna",
+        "url": "https://www.latribuna.com.py/deportes/2026/06/25/ansiedad-albirroja-una-pasion-que-nos-une-a-12000-km-de-distancia"
       }
     ],
-    "Paraguay por el mundo": [],
-    "Alcohol": [
+    "Paraguay por el mundo": [
       {
-        "titulo_corto": "Cervezas paraguayas ganan",
-        "resumen": "Cervezas paraguayas crecen frente a importadas premium y el vino gana espacio en reuniones mundialistas locales.",
+        "titulo_corto": "Paraguay-Australia comercial",
+        "resumen": "InfoNegocios cruza el partido con datos de comercio e inversión entre Paraguay y Australia en plena conversación mundialista.",
         "medio": "infonegocios",
-        "url": "https://infonegocios.com.py/infomundial/cervezas-paraguayas-ganan-frente-a-las-premium-importadas-y-el-vino-vive-su-mejor-momento-en-las-reuniones-mundialistas"
+        "url": "https://infonegocios.com.py/nota-principal/paraguay-y-australia-una-pulseada-ganada-en-la-balanza-comercial-y-con-creciente-interes-en-inversion-agro-y-tecnologia"
       }
-    ]
+    ],
+    "Alcohol": []
   }
 }
