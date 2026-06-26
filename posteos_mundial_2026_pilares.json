@@ -2,54 +2,60 @@
   "pilares": {
     "Humor": [
       {
-        "titulo_corto": "Santos por la Albirroja",
-        "resumen": "Extra mezcla fe popular y humor para pedir por Paraguay antes del duelo decisivo ante Australia.",
+        "titulo_corto": "Historia insólita Paraguay-Australia",
+        "resumen": "Una historia viral conecta de forma inesperada a Paraguay y Australia antes del partido, sumando humor a la previa.",
         "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/5-santos-titulares-para-pedir-por-la-albirroja"
+        "url": "https://www.extra.com.py/viral/de-no-creer-la-insolita-historia-que-une-a-paraguay-y-australia-antes-del-partido-de-hoy"
+      },
+      {
+        "titulo_corto": "Pruebera predice a la Albirroja",
+        "resumen": "Una pruebera anticipa victoria paraguaya, aunque advierte que el partido será difícil. Superstición y humor popular en clave mundialista.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/fama/pruebera-hablo-de-la-albirroja-hay-una-victoria-pero-va-a-costar-mucho"
       }
     ],
     "Equipo": [
       {
-        "titulo_corto": "Alfaro lo vive como final",
-        "resumen": "Alfaro pide afrontar Australia como si fuera el último partido, reforzando tensión y foco competitivo de la Albirroja.",
+        "titulo_corto": "Paraguay aún no asegura 16avos",
+        "resumen": "Explica por qué Paraguay todavía no aseguró los dieciseisavos y qué resultados necesita para avanzar en el Mundial 2026.",
         "medio": "abc",
-        "url": "https://www.abc.com.py/deportes/futbol/seleccion-paraguaya/2026/06/24/en-vivo-desde-el-levis-stadium-habla-gustavo-alfaro-en-la-previa-ante-australia"
+        "url": "https://www.abc.com.py/deportes/futbol/mundial-de-futbol/2026/06/26/con-la-calculadora-en-la-mano-por-que-paraguay-aun-no-esta-clasificado-a-los-16avos-del-mundial-2026"
       },
       {
-        "titulo_corto": "Australia teme a Paraguay",
-        "resumen": "El DT australiano define a la Albirroja como caos organizado y anticipa un cruce intenso ante Paraguay.",
-        "medio": "vssports",
-        "url": "https://www.vssports.com.py/versus/2026/06/24/dt-de-australia-teme-al-caos-organizado-de-la-albirroja"
+        "titulo_corto": "Cubas pide hacer historia",
+        "resumen": "Andrés Cubas expresa el deseo de que Paraguay haga historia en la Copa del Mundo y refuerza la expectativa del plantel.",
+        "medio": "cronica",
+        "url": "https://www.cronica.com.py/2026/06/25/que-puedan-hacer-historia"
       }
     ],
     "Controversia": [
       {
-        "titulo_corto": "Doble vara con Almirón",
-        "resumen": "Crónica compara el trato a Almirón con el caso Bellingham y activa debate sobre criterios disciplinarios en el Mundial.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/06/24/con-almiron-si-pero-con-bellingham-no"
-      },
-      {
-        "titulo_corto": "Cambio en penales FIFA",
-        "resumen": "InfoNegocios aborda un posible cambio de FIFA en los penales, una regla que puede impactar partidos decisivos del Mundial.",
-        "medio": "infonegocios",
-        "url": "https://infonegocios.com.py/infomundial/revolucion-en-los-penales-la-fifa-impulsa-un-cambio-inedito-en-pleno-mundial-2026"
+        "titulo_corto": "FIFA abre puerta a Rusia",
+        "resumen": "La FIFA abre una posibilidad de regreso para Rusia, tema sensible que suma controversia geopolítica al contexto mundialista.",
+        "medio": "latribuna",
+        "url": "https://www.latribuna.com.py/deportes/2026/06/26/fifa-abre-una-puerta-que-acerca-a-rusia-al-regreso"
       }
     ],
     "Color en la tribuna": [
       {
-        "titulo_corto": "Ansiedad albirroja global",
-        "resumen": "La Tribuna retrata la pasión paraguaya a 12.000 km, mostrando cómo la distancia también organiza emoción mundialista.",
+        "titulo_corto": "Canto paraguayo a australiano",
+        "resumen": "Hinchas paraguayos protagonizan un canto dirigido a un australiano antes del cruce mundialista, con picardía y color de tribuna.",
+        "medio": "cronica",
+        "url": "https://www.cronica.com.py/2026/06/25/le-dijeron-que-le-iban-a-comer-y-el-canguro-no-se-opuso"
+      },
+      {
+        "titulo_corto": "Ansiedad albirroja a 12.000 km",
+        "resumen": "La pasión por Paraguay se vive a 12.000 km de distancia durante la espera mundialista, reflejando identidad y comunidad albirroja.",
         "medio": "latribuna",
         "url": "https://www.latribuna.com.py/deportes/2026/06/25/ansiedad-albirroja-una-pasion-que-nos-une-a-12000-km-de-distancia"
       }
     ],
     "Paraguay por el mundo": [
       {
-        "titulo_corto": "Paraguay-Australia comercial",
-        "resumen": "InfoNegocios cruza el partido con datos de comercio e inversión entre Paraguay y Australia en plena conversación mundialista.",
-        "medio": "infonegocios",
-        "url": "https://infonegocios.com.py/nota-principal/paraguay-y-australia-una-pulseada-ganada-en-la-balanza-comercial-y-con-creciente-interes-en-inversion-agro-y-tecnologia"
+        "titulo_corto": "Diego Gómez y susto en EE.UU.",
+        "resumen": "La novia de Diego Gómez relata un susto vivido en Estados Unidos durante el contexto mundialista y muestra el entorno del jugador fuera del país.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/fama/novia-de-diego-gomez-conto-que-paso-sustazo-en-estados-unidos"
       }
     ],
     "Alcohol": []
