@@ -1,46 +1,46 @@
 {
   "topics": [
     {
-      "tema": "Mosaico hinchas en Times Square",
-      "engagement": 833,
-      "views": 9839,
-      "volumen": 150,
-      "sentiment": "Positive"
+      "tema": "Empate 0-0 Paraguay Australia",
+      "engagement": 7171,
+      "views": 429919,
+      "volumen": 350,
+      "sentiment": "Negative"
     },
     {
-      "tema": "Alfaro igualdad condiciones Bellingham",
-      "engagement": 408,
-      "views": 24680,
-      "volumen": 85,
-      "sentiment": "Neutral"
-    },
-    {
-      "tema": "Histórica segunda victoria Mundial",
-      "engagement": 150,
-      "views": 5000,
-      "volumen": 120,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Previa Alfaro no existe el mañana",
-      "engagement": 120,
-      "views": 10000,
-      "volumen": 200,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Cambios alineación Mauricio Ávalos",
-      "engagement": 60,
-      "views": 5000,
+      "tema": "Mosaico hinchas Times Square",
+      "engagement": 1762,
+      "views": 23180,
       "volumen": 80,
       "sentiment": "Positive"
     },
     {
-      "tema": "Horarios MEC frío y Albirroja",
-      "engagement": 30,
-      "views": 2000,
-      "volumen": 50,
+      "tema": "Apoyo Chipi Vera Albirroja",
+      "engagement": 5004,
+      "views": 115520,
+      "volumen": 200,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Expectativa clasif 16vos",
+      "engagement": 1500,
+      "views": 95000,
+      "volumen": 280,
       "sentiment": "Neutral"
+    },
+    {
+      "tema": "Criticas planteo Alfaro",
+      "engagement": 450,
+      "views": 18000,
+      "volumen": 120,
+      "sentiment": "Negative"
+    },
+    {
+      "tema": "Gabriel Avalos titular",
+      "engagement": 50,
+      "views": 2500,
+      "volumen": 40,
+      "sentiment": "Positive"
     }
   ]
 }
