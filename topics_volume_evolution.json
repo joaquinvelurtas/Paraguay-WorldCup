@@ -1,43 +1,48 @@
 {
   "topics": [
     {
-      "topic": "Prep vs Australia",
+      "topic": "Empate vs Australia",
       "series": [
         {"date": "2026-06-21", "volume": 320},
         {"date": "2026-06-22", "volume": 280},
         {"date": "2026-06-23", "volume": 300},
         {"date": "2026-06-24", "volume": 280},
-        {"date": "2026-06-25", "volume": 180}
+        {"date": "2026-06-25", "volume": 180},
+        {"date": "2026-06-26", "volume": 350}
       ]
     },
     {
-      "topic": "Horarios escolares frío Albirroja",
+      "topic": "Horarios escolares frio Albirroja",
       "series": [
         {"date": "2026-06-23", "volume": 400},
         {"date": "2026-06-24", "volume": 150},
-        {"date": "2026-06-25", "volume": 60}
+        {"date": "2026-06-25", "volume": 60},
+        {"date": "2026-06-26", "volume": 40}
       ]
     },
     {
-      "topic": "Controversia Almirón Bellingham",
+      "topic": "Controversia empate Australia",
       "series": [
         {"date": "2026-06-23", "volume": 300},
         {"date": "2026-06-24", "volume": 90},
-        {"date": "2026-06-25", "volume": 70}
+        {"date": "2026-06-25", "volume": 70},
+        {"date": "2026-06-26", "volume": 300}
       ]
     },
     {
       "topic": "Mosaico Times Square",
       "series": [
-        {"date": "2026-06-25", "volume": 180}
+        {"date": "2026-06-25", "volume": 180},
+        {"date": "2026-06-26", "volume": 60}
       ]
     },
     {
-      "topic": "Cambios Alfaro vs Australia",
+      "topic": "Avalos titular Alfaro",
       "series": [
         {"date": "2026-06-23", "volume": 250},
         {"date": "2026-06-24", "volume": 300},
-        {"date": "2026-06-25", "volume": 150}
+        {"date": "2026-06-25", "volume": 150},
+        {"date": "2026-06-26", "volume": 50}
       ]
     },
     {
@@ -48,7 +53,8 @@
         {"date": "2026-06-22", "volume": 250},
         {"date": "2026-06-23", "volume": 180},
         {"date": "2026-06-24", "volume": 220},
-        {"date": "2026-06-25", "volume": 200}
+        {"date": "2026-06-25", "volume": 200},
+        {"date": "2026-06-26", "volume": 250}
       ]
     }
   ]
