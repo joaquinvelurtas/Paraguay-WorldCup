@@ -1,61 +1,66 @@
 {
   "pilares": {
-    "Humor": [
-      {
-        "titulo_corto": "Historia insólita Paraguay-Australia",
-        "resumen": "Una historia viral conecta de forma inesperada a Paraguay y Australia antes del partido, sumando humor a la previa.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/viral/de-no-creer-la-insolita-historia-que-une-a-paraguay-y-australia-antes-del-partido-de-hoy"
-      },
-      {
-        "titulo_corto": "Pruebera predice a la Albirroja",
-        "resumen": "Una pruebera anticipa victoria paraguaya, aunque advierte que el partido será difícil. Superstición y humor popular en clave mundialista.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/fama/pruebera-hablo-de-la-albirroja-hay-una-victoria-pero-va-a-costar-mucho"
-      }
-    ],
+    "Humor": [],
     "Equipo": [
       {
-        "titulo_corto": "Paraguay aún no asegura 16avos",
-        "resumen": "Explica por qué Paraguay todavía no aseguró los dieciseisavos y qué resultados necesita para avanzar en el Mundial 2026.",
-        "medio": "abc",
-        "url": "https://www.abc.com.py/deportes/futbol/mundial-de-futbol/2026/06/26/con-la-calculadora-en-la-mano-por-que-paraguay-aun-no-esta-clasificado-a-los-16avos-del-mundial-2026"
+        "titulo_corto": "Paraguay recordó 2002",
+        "resumen": "Crónica revive el antecedente ante Alemania y lo presenta como revancha emocional para la Albirroja.",
+        "medio": "cronica",
+        "url": "https://www.cronica.com.py/2026/06/28/cuando-paraguay-puso-contra-las-cuerdas-a-alemania"
       },
       {
-        "titulo_corto": "Cubas pide hacer historia",
-        "resumen": "Andrés Cubas expresa el deseo de que Paraguay haga historia en la Copa del Mundo y refuerza la expectativa del plantel.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/06/25/que-puedan-hacer-historia"
+        "titulo_corto": "Paraguay promete batalla",
+        "resumen": "VS Sports anticipa un cruce exigente ante Alemania y destaca a Paraguay como rival capaz de competir.",
+        "medio": "vssports",
+        "url": "https://www.vssports.com.py/versus/2026/06/29/paraguay-promete-batalla-a-la-renacida-alemania"
+      },
+      {
+        "titulo_corto": "El sueño ante Alemania",
+        "resumen": "D10 presenta el Paraguay-Alemania como una oportunidad histórica para que la Albirroja siga en carrera.",
+        "medio": "d10",
+        "url": "https://d10.ultimahora.com/paraguay-vs-alemania-el-sueno-nos-llama"
       }
     ],
     "Controversia": [
       {
-        "titulo_corto": "FIFA abre puerta a Rusia",
-        "resumen": "La FIFA abre una posibilidad de regreso para Rusia, tema sensible que suma controversia geopolítica al contexto mundialista.",
+        "titulo_corto": "Alfaro responde a Chilavert",
+        "resumen": "Alfaro contestó a José Luis Chilavert en medio de la previa mundialista y elevó el tono del debate futbolero.",
+        "medio": "vssports",
+        "url": "https://www.vssports.com.py/versus/2026/06/28/gustavo-alfaro-respondio-a-jose-luis-chilavert"
+      },
+      {
+        "titulo_corto": "Calor amenaza la final",
+        "resumen": "La Tribuna advierte que una ola de calor extremo podría afectar la final del Mundial y la seguridad del evento.",
         "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/2026/06/26/fifa-abre-una-puerta-que-acerca-a-rusia-al-regreso"
+        "url": "https://www.latribuna.com.py/deportes/2026/06/29/alerta-maxima-en-el-mundial-una-ola-de-calor-extremo-pone-en-riesgo-la-gran-final"
       }
     ],
     "Color en la tribuna": [
       {
-        "titulo_corto": "Canto paraguayo a australiano",
-        "resumen": "Hinchas paraguayos protagonizan un canto dirigido a un australiano antes del cruce mundialista, con picardía y color de tribuna.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/06/25/le-dijeron-que-le-iban-a-comer-y-el-canguro-no-se-opuso"
+        "titulo_corto": "Cábalas albirrojas",
+        "resumen": "Extra reúne cábalas de hinchas paraguayos antes del duelo ante Alemania, reflejando rituales populares de la previa.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/actualidad/las-14-cabalas-para-el-partido-de-la-albirro"
       },
       {
-        "titulo_corto": "Ansiedad albirroja a 12.000 km",
-        "resumen": "La pasión por Paraguay se vive a 12.000 km de distancia durante la espera mundialista, reflejando identidad y comunidad albirroja.",
-        "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/2026/06/25/ansiedad-albirroja-una-pasion-que-nos-une-a-12000-km-de-distancia"
+        "titulo_corto": "Pareja dividida por Paraguay",
+        "resumen": "Una paraguaya cuenta que su marido alemán también alentará a Paraguay, sumando humor doméstico a la previa.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/actualidad/un-aleman-y-una-paraguaya-mi-marido-tambien-va-a-alentar-a-paraguay-porque-si-no-va-a-dormir-afuera"
+      },
+      {
+        "titulo_corto": "Naiel denuncia perfiles falsos",
+        "resumen": "Naiel Aguilera denunció cuentas falsas que usan su identidad, mostrando el costado digital de figuras de la hinchada.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/fama/naiel-aguilera-denuncio-a-avivados-que-se-hacen-pasar-por-ella"
       }
     ],
     "Paraguay por el mundo": [
       {
-        "titulo_corto": "Diego Gómez y susto en EE.UU.",
-        "resumen": "La novia de Diego Gómez relata un susto vivido en Estados Unidos durante el contexto mundialista y muestra el entorno del jugador fuera del país.",
+        "titulo_corto": "Enciso en Estados Unidos",
+        "resumen": "Julio Enciso celebró su primer aniversario de casado y se mostró paseando por Estados Unidos durante la cita mundialista.",
         "medio": "extra",
-        "url": "https://www.extra.com.py/fama/novia-de-diego-gomez-conto-que-paso-sustazo-en-estados-unidos"
+        "url": "https://www.extra.com.py/fama/julio-enciso-celebro-su-primer-ano-de-casado-con-su-esposa-y-se-paseo-por-estados-unidos"
       }
     ],
     "Alcohol": []
