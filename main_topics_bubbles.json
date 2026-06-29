@@ -1,45 +1,45 @@
 {
   "topics": [
     {
-      "tema": "Empate 0-0 Paraguay Australia",
-      "engagement": 7171,
-      "views": 429919,
-      "volumen": 350,
+      "tema": "Controversia Alfaro vs Chilavert",
+      "engagement": 5662,
+      "views": 380000,
+      "volumen": 450,
       "sentiment": "Negative"
     },
     {
-      "tema": "Mosaico hinchas Times Square",
-      "engagement": 1762,
-      "views": 23180,
-      "volumen": 80,
+      "tema": "Paraguay vs Alemania octavos",
+      "engagement": 850,
+      "views": 55000,
+      "volumen": 180,
       "sentiment": "Positive"
     },
     {
-      "tema": "Apoyo Chipi Vera Albirroja",
-      "engagement": 5004,
-      "views": 115520,
-      "volumen": 200,
-      "sentiment": "Positive"
+      "tema": "Críticas planteo Alfaro",
+      "engagement": 1200,
+      "views": 65000,
+      "volumen": 220,
+      "sentiment": "Negative"
     },
     {
-      "tema": "Expectativa clasif 16vos",
-      "engagement": 1500,
+      "tema": "Apoyo hinchas Albirroja",
+      "engagement": 1800,
       "views": 95000,
-      "volumen": 280,
+      "volumen": 210,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Declaraciones Alfaro conferencia",
+      "engagement": 900,
+      "views": 45000,
+      "volumen": 160,
       "sentiment": "Neutral"
     },
     {
-      "tema": "Criticas planteo Alfaro",
-      "engagement": 450,
-      "views": 18000,
-      "volumen": 120,
-      "sentiment": "Negative"
-    },
-    {
-      "tema": "Gabriel Avalos titular",
-      "engagement": 50,
-      "views": 2500,
-      "volumen": 40,
+      "tema": "Expectativa revancha vs Alemania",
+      "engagement": 700,
+      "views": 40000,
+      "volumen": 140,
       "sentiment": "Positive"
     }
   ]
