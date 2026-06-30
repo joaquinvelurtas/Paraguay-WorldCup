@@ -1,66 +1,73 @@
 {
   "pilares": {
-    "Humor": [],
+    "Humor": [
+      {
+        "titulo_corto": "Memes por triunfo",
+        "resumen": "Crónica recopila memes tras la victoria de Paraguay ante Alemania, mostrando cómo la hazaña pasó rápido al humor popular y viral.",
+        "medio": "cronica",
+        "url": "https://www.cronica.com.py/2026/06/29/paraguay-gano-y-los-memes-no-pueden-faltar-hermano"
+      },
+      {
+        "titulo_corto": "Alfaro, DT fachero",
+        "resumen": "Extra lleva a Alfaro al terreno de la cultura pop al destacar que fue elegido como el DT más fachero del Mundial.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/fama/gustavo-alfaro-fue-elegido-el-dt-mas-fachero-del-mundial"
+      }
+    ],
     "Equipo": [
       {
-        "titulo_corto": "Paraguay recordó 2002",
-        "resumen": "Crónica revive el antecedente ante Alemania y lo presenta como revancha emocional para la Albirroja.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/06/28/cuando-paraguay-puso-contra-las-cuerdas-a-alemania"
+        "titulo_corto": "Paraguay elimina a Alemania",
+        "resumen": "Paraguay venció a Alemania por penales y avanzó a octavos del Mundial 2026, instalando una hazaña histórica para la Albirroja.",
+        "medio": "abc",
+        "url": "https://www.abc.com.py/deportes/futbol/seleccion-paraguaya/2026/06/29/batacazo-mundial-paraguay-elimina-a-alemania-y-avanza-a-octavos-de-final"
       },
       {
-        "titulo_corto": "Paraguay promete batalla",
-        "resumen": "VS Sports anticipa un cruce exigente ante Alemania y destaca a Paraguay como rival capaz de competir.",
-        "medio": "vssports",
-        "url": "https://www.vssports.com.py/versus/2026/06/29/paraguay-promete-batalla-a-la-renacida-alemania"
-      },
-      {
-        "titulo_corto": "El sueño ante Alemania",
-        "resumen": "D10 presenta el Paraguay-Alemania como una oportunidad histórica para que la Albirroja siga en carrera.",
-        "medio": "d10",
-        "url": "https://d10.ultimahora.com/paraguay-vs-alemania-el-sueno-nos-llama"
+        "titulo_corto": "Alfaro celebra hazaña",
+        "resumen": "Gustavo Alfaro definió el triunfo ante Alemania como la victoria más grande de su vida, reforzando la épica del equipo paraguayo.",
+        "medio": "abc",
+        "url": "https://www.abc.com.py/deportes/futbol/seleccion-paraguaya/2026/06/29/gustavo-alfaro-para-mi-sin-lugar-a-dudas-fue-la-victoria-mas-grande-de-mi-vida"
       }
     ],
     "Controversia": [
       {
-        "titulo_corto": "Alfaro responde a Chilavert",
-        "resumen": "Alfaro contestó a José Luis Chilavert en medio de la previa mundialista y elevó el tono del debate futbolero.",
-        "medio": "vssports",
-        "url": "https://www.vssports.com.py/versus/2026/06/28/gustavo-alfaro-respondio-a-jose-luis-chilavert"
+        "titulo_corto": "34 detenidos en festejos",
+        "resumen": "Los festejos por Paraguay-Alemania terminaron con 34 detenidos, mostrando el costado conflictivo del desborde popular.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/actualidad/paraguay-alemania-operativo-policial-durante-festejos-termino-con-34-detenidos"
       },
       {
-        "titulo_corto": "Calor amenaza la final",
-        "resumen": "La Tribuna advierte que una ola de calor extremo podría afectar la final del Mundial y la seguridad del evento.",
+        "titulo_corto": "Racismo o metáfora",
+        "resumen": "La Tribuna plantea un debate sobre lenguaje, racismo y fútbol en contexto mundialista, abriendo una discusión sensible.",
         "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/2026/06/29/alerta-maxima-en-el-mundial-una-ola-de-calor-extremo-pone-en-riesgo-la-gran-final"
+        "url": "https://www.latribuna.com.py/deportes/2026/06/29/racismo-o-metafora-de-futbol"
       }
     ],
     "Color en la tribuna": [
       {
-        "titulo_corto": "Cábalas albirrojas",
-        "resumen": "Extra reúne cábalas de hinchas paraguayos antes del duelo ante Alemania, reflejando rituales populares de la previa.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/las-14-cabalas-para-el-partido-de-la-albirro"
+        "titulo_corto": "Extranjeros con Paraguay",
+        "resumen": "Extranjeros en Paraguay también alentaron a la Albirroja y vibraron con la clasificación, ampliando el clima de hinchada.",
+        "medio": "abc",
+        "url": "https://www.abc.com.py/nacionales/2026/06/30/el-dia-que-todos-alentaron-a-paraguay-extranjeros-vibraron-con-la-clasificacion-albirroja"
       },
       {
-        "titulo_corto": "Pareja dividida por Paraguay",
-        "resumen": "Una paraguaya cuenta que su marido alemán también alentará a Paraguay, sumando humor doméstico a la previa.",
+        "titulo_corto": "Festejos más locos",
+        "resumen": "Extra reúne festejos llamativos por el pase de Paraguay a octavos, con expresiones populares que marcaron la calle.",
         "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/un-aleman-y-una-paraguaya-mi-marido-tambien-va-a-alentar-a-paraguay-porque-si-no-va-a-dormir-afuera"
-      },
-      {
-        "titulo_corto": "Naiel denuncia perfiles falsos",
-        "resumen": "Naiel Aguilera denunció cuentas falsas que usan su identidad, mostrando el costado digital de figuras de la hinchada.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/fama/naiel-aguilera-denuncio-a-avivados-que-se-hacen-pasar-por-ella"
+        "url": "https://www.extra.com.py/actualidad/top-de-los-festejos-mas-locos-por-la-clasificacion-de-paraguay-a-8vos-de-final"
       }
     ],
     "Paraguay por el mundo": [
       {
-        "titulo_corto": "Enciso en Estados Unidos",
-        "resumen": "Julio Enciso celebró su primer aniversario de casado y se mostró paseando por Estados Unidos durante la cita mundialista.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/fama/julio-enciso-celebro-su-primer-ano-de-casado-con-su-esposa-y-se-paseo-por-estados-unidos"
+        "titulo_corto": "Boedo con la Albirroja",
+        "resumen": "Crónica conecta a Gill y la Albirroja con Boedo, reflejando cómo figuras paraguayas activan conversación fuera del país.",
+        "medio": "cronica",
+        "url": "https://www.cronica.com.py/2026/06/30/desde-boedo-con-gill-y-la-albirroja"
+      },
+      {
+        "titulo_corto": "Medios del mundo reaccionan",
+        "resumen": "Olé recopila cómo medios internacionales leyeron la hazaña de Paraguay ante Alemania, midiendo su alcance global.",
+        "medio": "ole",
+        "url": "https://www.ole.com.ar/mundial/mundial-2026/paraguay-mundial2026-alemania-penales_0_eVOrupQmBK.html"
       }
     ],
     "Alcohol": []
