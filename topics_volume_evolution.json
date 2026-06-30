@@ -12,15 +12,6 @@
       ]
     },
     {
-      "topic": "Horarios escolares frio Albirroja",
-      "series": [
-        {"date": "2026-06-23", "volume": 400},
-        {"date": "2026-06-24", "volume": 150},
-        {"date": "2026-06-25", "volume": 60},
-        {"date": "2026-06-26", "volume": 40}
-      ]
-    },
-    {
       "topic": "Controversia Alfaro Chilavert",
       "series": [
         {"date": "2026-06-23", "volume": 300},
@@ -28,14 +19,16 @@
         {"date": "2026-06-25", "volume": 70},
         {"date": "2026-06-26", "volume": 300},
         {"date": "2026-06-28", "volume": 280},
-        {"date": "2026-06-29", "volume": 420}
+        {"date": "2026-06-29", "volume": 420},
+        {"date": "2026-06-30", "volume": 350}
       ]
     },
     {
-      "topic": "Paraguay vs Alemania",
+      "topic": "Paraguay elimina a Alemania",
       "series": [
         {"date": "2026-06-28", "volume": 120},
-        {"date": "2026-06-29", "volume": 180}
+        {"date": "2026-06-29", "volume": 180},
+        {"date": "2026-06-30", "volume": 2500}
       ]
     },
     {
@@ -58,7 +51,17 @@
         {"date": "2026-06-25", "volume": 200},
         {"date": "2026-06-26", "volume": 250},
         {"date": "2026-06-28", "volume": 220},
-        {"date": "2026-06-29", "volume": 280}
+        {"date": "2026-06-29", "volume": 280},
+        {"date": "2026-06-30", "volume": 900}
+      ]
+    },
+    {
+      "topic": "Horarios escolares frio Albirroja",
+      "series": [
+        {"date": "2026-06-23", "volume": 400},
+        {"date": "2026-06-24", "volume": 150},
+        {"date": "2026-06-25", "volume": 60},
+        {"date": "2026-06-26", "volume": 40}
       ]
     }
   ]

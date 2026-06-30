@@ -1,45 +1,38 @@
 {
   "topics": [
     {
-      "tema": "Controversia Alfaro vs Chilavert",
-      "engagement": 5662,
-      "views": 380000,
-      "volumen": 450,
-      "sentiment": "Negative"
-    },
-    {
-      "tema": "Paraguay vs Alemania octavos",
-      "engagement": 850,
-      "views": 55000,
-      "volumen": 180,
+      "tema": "Paraguay elimina a Alemania del Mundial",
+      "engagement": 149074,
+      "views": 1271480,
+      "volumen": 5000,
       "sentiment": "Positive"
     },
     {
-      "tema": "Críticas planteo Alfaro",
-      "engagement": 1200,
-      "views": 65000,
-      "volumen": 220,
-      "sentiment": "Negative"
-    },
-    {
-      "tema": "Apoyo hinchas Albirroja",
-      "engagement": 1800,
-      "views": 95000,
-      "volumen": 210,
+      "tema": "Canale héroe vs Neuer y Alemania",
+      "engagement": 7216,
+      "views": 88080,
+      "volumen": 800,
       "sentiment": "Positive"
     },
     {
-      "tema": "Declaraciones Alfaro conferencia",
-      "engagement": 900,
+      "tema": "Festejos Albirroja con Roque Santa Cruz",
+      "engagement": 4372,
+      "views": 41260,
+      "volumen": 500,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Reacción Nagelsmann eliminación",
+      "engagement": 2200,
       "views": 45000,
-      "volumen": 160,
+      "volumen": 400,
       "sentiment": "Neutral"
     },
     {
-      "tema": "Expectativa revancha vs Alemania",
-      "engagement": 700,
-      "views": 40000,
-      "volumen": 140,
+      "tema": "Apoyo hinchas Albirroja post victoria",
+      "engagement": 3500,
+      "views": 120000,
+      "volumen": 700,
       "sentiment": "Positive"
     }
   ]
