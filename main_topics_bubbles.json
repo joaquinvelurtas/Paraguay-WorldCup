@@ -1,38 +1,38 @@
 {
   "topics": [
     {
-      "tema": "Paraguay elimina a Alemania del Mundial",
-      "engagement": 149074,
-      "views": 1271480,
+      "tema": "Feriado nacional por victoria vs Alemania",
+      "engagement": 350000,
+      "views": 10000000,
       "volumen": 5000,
       "sentiment": "Positive"
     },
     {
-      "tema": "Canale héroe vs Neuer y Alemania",
-      "engagement": 7216,
-      "views": 88080,
-      "volumen": 800,
+      "tema": "José Canale héroe del penal",
+      "engagement": 20000,
+      "views": 500000,
+      "volumen": 1500,
       "sentiment": "Positive"
     },
     {
-      "tema": "Festejos Albirroja con Roque Santa Cruz",
-      "engagement": 4372,
-      "views": 41260,
-      "volumen": 500,
+      "tema": "Festejos orgullo hinchas Albirroja",
+      "engagement": 10000,
+      "views": 800000,
+      "volumen": 2500,
       "sentiment": "Positive"
     },
     {
-      "tema": "Reacción Nagelsmann eliminación",
-      "engagement": 2200,
-      "views": 45000,
-      "volumen": 400,
+      "tema": "Paraguay vs Francia en octavos",
+      "engagement": 5000,
+      "views": 200000,
+      "volumen": 1000,
       "sentiment": "Neutral"
     },
     {
-      "tema": "Apoyo hinchas Albirroja post victoria",
-      "engagement": 3500,
-      "views": 120000,
-      "volumen": 700,
+      "tema": "Elogios Gustavo Alfaro",
+      "engagement": 3000,
+      "views": 50000,
+      "volumen": 600,
       "sentiment": "Positive"
     }
   ]
