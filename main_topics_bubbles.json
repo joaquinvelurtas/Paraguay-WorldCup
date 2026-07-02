@@ -1,39 +1,39 @@
 {
   "topics": [
     {
-      "tema": "Feriado nacional por victoria vs Alemania",
-      "engagement": 350000,
-      "views": 10000000,
-      "volumen": 5000,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "José Canale héroe del penal",
-      "engagement": 20000,
-      "views": 500000,
-      "volumen": 1500,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Festejos orgullo hinchas Albirroja",
-      "engagement": 10000,
-      "views": 800000,
+      "tema": "Video viral hincha perro vs Alemania",
+      "engagement": 18000,
+      "views": 300000,
       "volumen": 2500,
       "sentiment": "Positive"
     },
     {
-      "tema": "Paraguay vs Francia en octavos",
-      "engagement": 5000,
-      "views": 200000,
-      "volumen": 1000,
-      "sentiment": "Neutral"
+      "tema": "José Canale héroe penal Alemania",
+      "engagement": 4000,
+      "views": 100000,
+      "volumen": 800,
+      "sentiment": "Positive"
     },
     {
-      "tema": "Elogios Gustavo Alfaro",
-      "engagement": 3000,
-      "views": 50000,
-      "volumen": 600,
+      "tema": "Paraguay vs Francia expectativas",
+      "engagement": 7000,
+      "views": 200000,
+      "volumen": 1200,
       "sentiment": "Positive"
+    },
+    {
+      "tema": "Orgullo hinchas Albirroja",
+      "engagement": 10000,
+      "views": 300000,
+      "volumen": 1500,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Feriado Albirroja debate",
+      "engagement": 1500,
+      "views": 60000,
+      "volumen": 400,
+      "sentiment": "Neutral"
     }
   ]
 }
