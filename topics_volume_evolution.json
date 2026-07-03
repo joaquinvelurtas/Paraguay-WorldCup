@@ -1,13 +1,9 @@
 {
   "topics": [
     {
-      "topic": "Paraguay elimina a Alemania",
+      "topic": "Meme viral córner Paraguay",
       "series": [
-        {"date": "2026-06-28", "volume": 120},
-        {"date": "2026-06-29", "volume": 180},
-        {"date": "2026-06-30", "volume": 2500},
-        {"date": "2026-07-01", "volume": 950},
-        {"date": "2026-07-02", "volume": 800}
+        {"date": "2026-07-03", "volume": 2500}
       ]
     },
     {
@@ -24,28 +20,30 @@
         {"date": "2026-06-29", "volume": 280},
         {"date": "2026-06-30", "volume": 900},
         {"date": "2026-07-01", "volume": 650},
-        {"date": "2026-07-02", "volume": 900}
+        {"date": "2026-07-02", "volume": 900},
+        {"date": "2026-07-03", "volume": 1100}
       ]
     },
     {
-      "topic": "Feriado Albirroja",
+      "topic": "Previa Albirroja vs Francia",
       "series": [
-        {"date": "2026-07-01", "volume": 1800},
-        {"date": "2026-07-02", "volume": 350}
+        {"date": "2026-07-01", "volume": 700},
+        {"date": "2026-07-02", "volume": 1000},
+        {"date": "2026-07-03", "volume": 1500}
       ]
     },
     {
-      "topic": "Héroe Canale penal",
+      "topic": "Orgullo Albirroja preparación",
       "series": [
-        {"date": "2026-07-01", "volume": 1100},
-        {"date": "2026-07-02", "volume": 550}
+        {"date": "2026-07-03", "volume": 800}
       ]
     },
     {
       "topic": "Paraguay vs Francia octavos",
       "series": [
         {"date": "2026-07-01", "volume": 700},
-        {"date": "2026-07-02", "volume": 1000}
+        {"date": "2026-07-02", "volume": 1000},
+        {"date": "2026-07-03", "volume": 1200}
       ]
     }
   ]
