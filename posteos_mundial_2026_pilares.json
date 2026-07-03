@@ -2,74 +2,55 @@
   "pilares": {
     "Humor": [
       {
-        "titulo_corto": "Arenga de Pipino",
-        "resumen": "Pipino Cuevas protagoniza una arenga popular junto al Kun, sumando humor, épica barrial y tono viral al entusiasmo por la Albirroja.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/07/01/nande-jarahata-chupekuera-ipechore-la-arenga-de-pipino-con-el-kun"
+        "titulo_corto": "Boda vs. Paraguay",
+        "resumen": "Una pareja recibe pedidos para cancelar su boda porque coincide con el partido de Paraguay. El caso muestra humor, fanatismo y prioridad mundialista.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/viral/insolito-le-piden-cancelar-su-boda-por-el-partido-de-paraguay"
       },
       {
-        "titulo_corto": "Chat con Mbappé",
-        "resumen": "Un llamativo chat de Pablito Pinto con Mbappé alimenta la previa Paraguay-Francia con tono mediático, humorístico y viral.",
+        "titulo_corto": "Hincha cábala",
+        "resumen": "Un hincha viral afirma ser la cábala de la Albirroja. La historia suma superstición, humor popular y conversación liviana al clima mundialista.",
         "medio": "extra",
-        "url": "https://www.extra.com.py/fama/el-llamativo-chat-de-pablito-pinto-con-mbappe"
+        "url": "https://www.extra.com.py/fama/hincha-tranqui-nomas-conto-su-historia-y-lanzo-yo-soy-la-cabala"
       }
     ],
     "Equipo": [
       {
-        "titulo_corto": "Gill lidera ranking",
-        "resumen": "Orlando Gill aparece al frente del ranking oficial de mejores arqueros del Mundial 2026 y refuerza el orgullo albirrojo.",
+        "titulo_corto": "Barcola advierte",
+        "resumen": "Bradley Barcola anticipa un partido físico ante Paraguay y dice que la Albirroja va a dar muchos golpes. La nota instala respeto y tensión previa.",
         "medio": "abc",
-        "url": "https://www.abc.com.py/deportes/futbol/seleccion-paraguaya/2026/07/01/orlando-gill-lidera-el-ranking-oficial-de-los-mejores-arqueros-del-mundial-2026"
+        "url": "https://www.abc.com.py/deportes/2026/07/02/bradley-barcola-avisa-que-paraguay-va-a-dar-muchos-golpes"
       },
       {
-        "titulo_corto": "Clima favorece a Paraguay",
-        "resumen": "La previa ante Francia suma el factor climático como posible ventaja para Paraguay y una clave táctica para sostener la ilusión.",
-        "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/2026/07/02/factor-clima-una-ventaja-que-deberia-aprovechar-paraguay"
-      }
-    ],
-    "Controversia": [
-      {
-        "titulo_corto": "Racismo en el Mundial",
-        "resumen": "FIFA denuncia un aumento de comentarios racistas e insultantes durante el Mundial, abriendo una discusión sensible sobre convivencia digital.",
+        "titulo_corto": "Almirón y el país",
+        "resumen": "Miguel Almirón celebra ver al país disfrutar con la Selección. El testimonio conecta el rendimiento paraguayo con orgullo, alegría e ilusión colectiva.",
         "medio": "vssports",
-        "url": "https://www.vssports.com.py/versus/2026/07/01/fifa-denuncia-aumento-de-comentarios-racistas-e-insultantes-durante-el-mundial"
-      },
-      {
-        "titulo_corto": "Crítica al formato",
-        "resumen": "El entrenador de Ghana cuestiona la nueva modalidad del Mundial y activa debate sobre justicia deportiva, calendario y competitividad.",
-        "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/2026/07/01/machetazo-del-entrenador-de-ghana-a-la-nueva-modalidad-del-mundial"
+        "url": "https://www.vssports.com.py/versus/2026/07/02/miguel-almiron-es-muy-satisfactorio-ver-al-pais-disfrutar"
       }
     ],
+    "Controversia": [],
     "Color en la tribuna": [
       {
-        "titulo_corto": "Tatuaje por promesa",
-        "resumen": "Un hincha se tatuó a Gill y Canale tras una promesa, mostrando una forma extrema, visual y emotiva de vivir la pasión por la Albirroja.",
+        "titulo_corto": "Mami de Canale",
+        "resumen": "La madre de Canale recuerda dificultades económicas y la perseverancia del jugador. La historia humaniza el recorrido albirrojo en el Mundial.",
+        "medio": "cronica",
+        "url": "https://www.cronica.com.py/2026/07/02/mami-de-canale-pasabamos-mal-economicamente-pero-el-nunca-se-rindio"
+      },
+      {
+        "titulo_corto": "Perros albirrojos",
+        "resumen": "Delmer lanza indumentaria albirroja para perros. La pasión mundialista se expande a mascotas, consumo familiar y color fuera de la cancha.",
+        "medio": "infonegocios",
+        "url": "https://infonegocios.com.py/zona-lifestyle/los-jaguas-tambien-visten-la-albirroja-delmer-lanzo-una-coleccion-exclusiva-para-perros"
+      }
+    ],
+    "Paraguay por el mundo": [],
+    "Alcohol": [
+      {
+        "titulo_corto": "Vino para festejar",
+        "resumen": "Una mujer robó vino para celebrar la clasificación de la Albirroja. El caso cruza festejo popular, exceso y alcohol en torno al Mundial.",
         "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/pasion-sin-limites-se-tatuo-a-gill-y-canale-tras-promesa"
-      },
-      {
-        "titulo_corto": "Albirroja de alto rating",
-        "resumen": "El partido de Paraguay fue uno de los más vistos del Mundial, confirmando el fuerte arrastre popular y televisivo de la Albirroja.",
-        "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/futbol/2026/07/01/el-cotejo-de-la-albirroja-fue-el-de-mayor-rating-luego-de-argentina"
+        "url": "https://www.extra.com.py/actualidad/dona-robo-vino-para-festejar-la-clasificacion-de-la-albirroja"
       }
-    ],
-    "Paraguay por el mundo": [
-      {
-        "titulo_corto": "Uganda apoya a Paraguay",
-        "resumen": "Niños de Uganda que viralizaron su apoyo a Paraguay recibieron camisetas oficiales, llevando la identidad albirroja fuera del país.",
-        "medio": "independiente",
-        "url": "https://independiente.com.py/ninos-de-uganda-reciben-camisetas-oficiales-de-la-albirroja-tras-viralizar-su-apoyo-a-paraguay"
-      },
-      {
-        "titulo_corto": "Albirroja tendencia global",
-        "resumen": "Paraguay se instala como tendencia global tras su campaña mundialista, ampliando el alcance internacional de la conversación albirroja.",
-        "medio": "latribuna",
-        "url": "https://www.latribuna.com.py/deportes/2026/07/01/el-cazador-atrapo-a-su-mayor-presa-la-albirroja-es-tendencia-global"
-      }
-    ],
-    "Alcohol": []
+    ]
   }
 }
