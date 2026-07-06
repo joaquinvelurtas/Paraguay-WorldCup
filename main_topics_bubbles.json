@@ -1,39 +1,39 @@
 {
   "topics": [
     {
-      "tema": "Meme viral córner Paraguay",
-      "engagement": 87000,
-      "views": 2691000,
-      "volumen": 2500,
-      "sentiment": "Neutral"
-    },
-    {
-      "tema": "Previa Paraguay vs Francia",
-      "engagement": 1200,
-      "views": 50000,
-      "volumen": 1500,
-      "sentiment": "Positive"
-    },
-    {
-      "tema": "Apoyo orgullo hinchas Albirroja",
-      "engagement": 700,
-      "views": 27000,
+      "tema": "Discurso Alfaro revolución Paraguay",
+      "engagement": 10563,
+      "views": 444509,
       "volumen": 800,
       "sentiment": "Positive"
     },
     {
-      "tema": "Alineación preparación vs Francia",
-      "engagement": 300,
-      "views": 15000,
-      "volumen": 600,
+      "tema": "Orlando Gill figura del Mundial",
+      "engagement": 2404,
+      "views": 31054,
+      "volumen": 300,
       "sentiment": "Positive"
     },
     {
-      "tema": "Clima frío partido Francia",
-      "engagement": 200,
-      "views": 10000,
+      "tema": "Recibimiento Albirroja aeropuerto",
+      "engagement": 1493,
+      "views": 14631,
       "volumen": 400,
-      "sentiment": "Neutral"
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Ovación Alfaro que se quede",
+      "engagement": 300,
+      "views": 5000,
+      "volumen": 200,
+      "sentiment": "Positive"
+    },
+    {
+      "tema": "Orgullo garra guaraní Albirroja",
+      "engagement": 700,
+      "views": 8000,
+      "volumen": 250,
+      "sentiment": "Positive"
     }
   ]
 }
