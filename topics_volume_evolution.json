@@ -1,9 +1,10 @@
 {
   "topics": [
     {
-      "topic": "Meme viral córner Paraguay",
+      "topic": "Discurso Alfaro revolución",
       "series": [
-        {"date": "2026-07-03", "volume": 2500}
+        {"date": "2026-07-05", "volume": 600},
+        {"date": "2026-07-06", "volume": 200}
       ]
     },
     {
@@ -21,29 +22,33 @@
         {"date": "2026-06-30", "volume": 900},
         {"date": "2026-07-01", "volume": 650},
         {"date": "2026-07-02", "volume": 900},
-        {"date": "2026-07-03", "volume": 1100}
+        {"date": "2026-07-03", "volume": 1100},
+        {"date": "2026-07-06", "volume": 400}
       ]
     },
     {
-      "topic": "Previa Albirroja vs Francia",
+      "topic": "Recibimiento Albirroja aeropuerto",
       "series": [
-        {"date": "2026-07-01", "volume": 700},
-        {"date": "2026-07-02", "volume": 1000},
-        {"date": "2026-07-03", "volume": 1500}
+        {"date": "2026-07-06", "volume": 400}
       ]
     },
     {
-      "topic": "Orgullo Albirroja preparación",
+      "topic": "Orlando Gill figura Mundial",
       "series": [
-        {"date": "2026-07-03", "volume": 800}
+        {"date": "2026-07-05", "volume": 200},
+        {"date": "2026-07-06", "volume": 100}
       ]
     },
     {
-      "topic": "Paraguay vs Francia octavos",
+      "topic": "Ovación Alfaro que se quede",
       "series": [
-        {"date": "2026-07-01", "volume": 700},
-        {"date": "2026-07-02", "volume": 1000},
-        {"date": "2026-07-03", "volume": 1200}
+        {"date": "2026-07-06", "volume": 200}
+      ]
+    },
+    {
+      "topic": "Orgullo garra guaraní Albirroja",
+      "series": [
+        {"date": "2026-07-06", "volume": 250}
       ]
     }
   ]
