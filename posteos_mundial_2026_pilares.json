@@ -2,68 +2,69 @@
   "pilares": {
     "Humor": [
       {
-        "titulo_corto": "Alemán albirrojo",
-        "resumen": "Un periodista alemán que apoyó a Paraguay terminó afectado por la emoción albirroja. La nota mezcla color internacional, lenguaje popular y tono humorístico.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/07/05/periodista-aleman-apoyo-a-la-albirroja-termino-siendo-tye-raku"
-      },
-      {
-        "titulo_corto": "Mbappé y Cáceres",
-        "resumen": "Olé recoge la frase de Mbappé a Cáceres durante el partido. El episodio alimenta conversación viral entre burla, picante y folklore futbolero.",
-        "medio": "ole",
-        "url": "https://www.ole.com.ar/mundial/mundial-2026/caceres-revelo-frase-tiro-mbappe-queres-dar-beso_0_RFXtBSA3a4.html"
+        "titulo_corto": "Diente tras partido",
+        "resumen": "Un joven contó que perdió un diente tras un partido de Paraguay, convirtiendo el fanatismo albirrojo en contenido viral.",
+        "medio": "extra",
+        "url": "https://www.extra.com.py/viral/joven-conto-que-perdio-un-diente-tras-el-partido-de-paraguay"
       }
     ],
     "Equipo": [
       {
-        "titulo_corto": "Orgullo albirrojo",
-        "resumen": "La nota recoge el orgullo de hinchas y entorno albirrojo tras la campaña mundialista, con foco en Alfaro, la selección y el vínculo emocional con Paraguay.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/07/06/orgullosos"
+        "titulo_corto": "Futuro de Alfaro",
+        "resumen": "La APF respondió sobre la continuidad de Gustavo Alfaro al frente de la Albirroja tras la campaña mundialista.",
+        "medio": "vssports",
+        "url": "https://www.vssports.com.py/versus/2026/07/06/la-respuesta-de-harrison-sobre-la-continuidad-de-alfaro"
       },
       {
-        "titulo_corto": "Albirroja en casa",
-        "resumen": "La cobertura muestra el regreso de la Albirroja al país tras el Mundial 2026 y convierte la llegada del plantel en una escena de identidad nacional.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/07/06/orgulloso-de-ser-paraguayo"
+        "titulo_corto": "Paraguay creció",
+        "resumen": "La nota revisa cómo Paraguay empezó mal, levantó nivel y cerró el Mundial con una imagen competitiva fortalecida.",
+        "medio": "latribuna",
+        "url": "https://www.latribuna.com.py/deportes/2026/07/06/paraguay-empezo-mal-pero-crecio-y-cayo-como-un-gigante"
       }
     ],
     "Controversia": [
       {
-        "titulo_corto": "Crítica por desprecio",
-        "resumen": "La nota recoge una reacción crítica vinculada al trato hacia Paraguay tras el cruce mundialista. El foco está en el agravio y el malestar albirrojo.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/07/06/mas-sucio-es-el-desprecio-que-demostraron-gatillo"
+        "titulo_corto": "Celeste vs Mbappé",
+        "resumen": "Celeste Amarilla respondió a Kylian Mbappé y mantuvo abierto el cruce público tras la polémica mundialista.",
+        "medio": "vssports",
+        "url": "https://www.vssports.com.py/versus/2026/07/07/celeste-amarilla-a-kylian-mbappe-el-problema-es-entre-vos-y-yo"
       },
       {
-        "titulo_corto": "Actitud de Mbappé",
-        "resumen": "Un exarquero campeón cuestiona la actitud de Mbappé ante Paraguay. La nota refuerza la polémica por el comportamiento del francés en el partido.",
-        "medio": "cronica",
-        "url": "https://www.cronica.com.py/2026/07/05/atende-lo-que-dijo-un-exarquero-campeon-sobre-la-actitud-de-mbappe"
+        "titulo_corto": "Piera y Balogun",
+        "resumen": "El paraguayo Alejandro Piera figura entre los votantes para levantar la sanción a Balogun en una decisión discutida.",
+        "medio": "d10",
+        "url": "https://d10.ultimahora.com/paraguayo-alejandro-piera-entre-los-votantes-para-levantar-la-sancion-a-balogun"
       }
     ],
     "Color en la tribuna": [
       {
-        "titulo_corto": "Recibimiento albirrojo",
-        "resumen": "Cientos de hinchas recibieron al plantel paraguayo tras la eliminación. La nota muestra respaldo popular, emoción y orgullo por la campaña mundialista.",
+        "titulo_corto": "Hinchas reciben a la Albirroja",
+        "resumen": "Cientos de hinchas recibieron a los jugadores paraguayos tras la campaña mundialista, con clima de orgullo y emoción.",
         "medio": "extra",
         "url": "https://www.extra.com.py/actualidad/cientos-de-hinchas-recibieron-a-los-albirrojos"
-      },
-      {
-        "titulo_corto": "Gillmanía urbana",
-        "resumen": "La figura de Orlando Gill llegó a murales urbanos. La nota muestra cómo el Mundial bajó a la calle y convirtió al arquero en ícono popular.",
-        "medio": "extra",
-        "url": "https://www.extra.com.py/actualidad/la-gillmania-llego-con-arte-urbano-en-murales"
       }
     ],
     "Paraguay por el mundo": [
       {
-        "titulo_corto": "Gill mira a Europa",
-        "resumen": "La actuación mundialista de Orlando Gill despierta interés de clubes europeos. La nota proyecta a un paraguayo en el mercado internacional.",
-        "medio": "ole",
-        "url": "https://www.ole.com.ar/san-lorenzo/san-lorenzo-paraguay-mundial-orlando-gill-clubes-europa-venta-ofertas_0_f0F5Tcl3Tb.html"
+        "titulo_corto": "Galarza interesa en España",
+        "resumen": "Un equipo español habría iniciado gestiones por Matías Galarza luego de su exposición con Paraguay en el Mundial.",
+        "medio": "vssports",
+        "url": "https://www.vssports.com.py/versus/2026/07/06/aseguran-que-un-equipo-espanol-inicio-gestiones-por-matias-galarza"
       }
     ],
-    "Alcohol": []
+    "Alcohol": [
+      {
+        "titulo_corto": "Costillas y cerveza",
+        "resumen": "Supermercados duplicaron pedidos de costillas y cerveza por el consumo asociado a los partidos del Mundial.",
+        "medio": "infonegocios",
+        "url": "https://infonegocios.com.py/infomundial/supermercados-duplicaron-pedidos-de-costillas-y-cerveza"
+      },
+      {
+        "titulo_corto": "Choperas mundialistas",
+        "resumen": "El Mundial disparó las reservas de choperas para encuentros de hinchas y reuniones alrededor de los partidos.",
+        "medio": "infonegocios",
+        "url": "https://infonegocios.com.py/infomundial/mundial-disparo-las-reservas-de-choperas-el-negocio-vuelve-a-jugar-un-partido-aparte"
+      }
+    ]
   }
 }
