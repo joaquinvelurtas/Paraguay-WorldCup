@@ -1,54 +1,47 @@
 {
   "topics": [
     {
-      "topic": "Discurso Alfaro revolución",
+      "topic": "Discurso Alfaro continuidad",
       "series": [
         {"date": "2026-07-05", "volume": 600},
-        {"date": "2026-07-06", "volume": 200}
+        {"date": "2026-07-06", "volume": 200},
+        {"date": "2026-07-07", "volume": 150}
       ]
     },
     {
-      "topic": "Apoyo hinchas Albirroja",
+      "topic": "Escándalo Mbappé Amarilla",
       "series": [
-        {"date": "2026-06-19", "volume": 380},
-        {"date": "2026-06-21", "volume": 300},
-        {"date": "2026-06-22", "volume": 250},
-        {"date": "2026-06-23", "volume": 180},
-        {"date": "2026-06-24", "volume": 220},
-        {"date": "2026-06-25", "volume": 200},
-        {"date": "2026-06-26", "volume": 250},
-        {"date": "2026-06-28", "volume": 220},
-        {"date": "2026-06-29", "volume": 280},
-        {"date": "2026-06-30", "volume": 900},
-        {"date": "2026-07-01", "volume": 650},
-        {"date": "2026-07-02", "volume": 900},
-        {"date": "2026-07-03", "volume": 1100},
-        {"date": "2026-07-06", "volume": 400}
+        {"date": "2026-07-06", "volume": 1500},
+        {"date": "2026-07-07", "volume": 2500}
       ]
     },
     {
       "topic": "Recibimiento Albirroja aeropuerto",
       "series": [
-        {"date": "2026-07-06", "volume": 400}
+        {"date": "2026-07-06", "volume": 400},
+        {"date": "2026-07-07", "volume": 300}
       ]
     },
     {
       "topic": "Orlando Gill figura Mundial",
       "series": [
         {"date": "2026-07-05", "volume": 200},
-        {"date": "2026-07-06", "volume": 100}
+        {"date": "2026-07-06", "volume": 100},
+        {"date": "2026-07-07", "volume": 250}
       ]
     },
     {
       "topic": "Ovación Alfaro que se quede",
       "series": [
-        {"date": "2026-07-06", "volume": 200}
+        {"date": "2026-07-06", "volume": 200},
+        {"date": "2026-07-07", "volume": 150}
       ]
     },
     {
       "topic": "Orgullo garra guaraní Albirroja",
       "series": [
-        {"date": "2026-07-06", "volume": 250}
+        {"date": "2026-07-06", "volume": 250},
+        {"date": "2026-07-07", "volume": 400}
       ]
     }
   ]
